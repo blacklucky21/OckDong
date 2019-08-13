@@ -6,42 +6,6 @@
 <title>위즈디자인-NO85</title>
 <link href="<%=request.getContextPath()%>/views/login/login.css"
 	rel="stylesheet" type="text/css">
-<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="csrf-token"
-	content="MTU2NTY4MTQ0Njk5MDA1NTc1MTgwODk2NjI3MTQ4NDY4NTE5ODkwODc4">
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="위즈디자인-NO85">
-<meta property="og:description" content="WIZDESIGN">
-<meta property="og:locale" content="ko_KR">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="위즈디자인-NO85">
-<meta name="twitter:description" content="WIZDESIGN"> -->
-
-
-<!-- <link href="http://fonts.googleapis.com/css?family=Ubuntu"
-	rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed"
-	rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css"
-	href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700"
-	rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans"
-	rel="stylesheet" type="text/css">
-<link
-	href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600"
-	rel="stylesheet" type="text/css">
-<link
-	href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300"
-	rel="stylesheet" type="text/css">
-<link
-	href="http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700,900,100italic,300italic,400italic,700italic,900italic"
-	rel="stylesheet" type="text/css"> -->
 <style type="text/css">
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
@@ -61,13 +25,6 @@
 		format('truetype');
 }
 </style>
-
-
-
-<!--{ ? }-->
-
-
-
 </head>
 <body class="body-member body-login pc" style="">
 	<div id="wrap"></div>
@@ -187,19 +144,19 @@
 											.click(
 													function(e) {
 														e.preventDefault();
-														location.href = '../member/join_method.php';
+														location.href = '<%= request.getContextPath() %>/views/joinForm/memberJoin.jsp';
 													});
 									$('#btnFindId')
 											.click(
 													function(e) {
 														e.preventDefault();
-														location.href = '../member/find_id.php';
+														location.href = '<%= request.getContextPath() %>/views/findIdPwdForm/findId.jsp';
 													});
 									$('#btnFindPwd')
 											.click(
 													function(e) {
 														e.preventDefault();
-														location.href = '../member/find_password.php';
+														location.href = '<%= request.getContextPath() %>/views/findIdPwdForm/findPwd.jsp';
 													});
 
 									$('#loginId, #loginPwd')
@@ -235,62 +192,6 @@
 										}
 									});
 
-									// 비회원 주문조회 폼 체크
-									$('#formOrderLogin')
-											.validate(
-													{
-														rules : {
-															orderNm : 'required',
-															orderNo : {
-																required : true,
-																number : true,
-																maxlength : 16
-															}
-														},
-														messages : {
-															orderNm : {
-																required : "주문자명을 입력해주세요."
-															},
-															orderNo : {
-																required : "주문번호를 입력해주세요.",
-																number : "숫자로만 입력해주세요.",
-																maxlength : "주문번호는 12자리입니다."
-															}
-														},
-														submitHandler : function(
-																form) {
-															$
-																	.post(
-																			form.action,
-																			$(
-																					form)
-																					.serializeObject())
-																	.done(
-																			function(
-																					data,
-																					textStatus,
-																					jqXhr) {
-																				console
-																						.log(data);
-																				if (data.result == 0) {
-																					location
-																							.replace('../mypage/order_view.php?orderNo='
-																									+ data.orderNo);
-																				} else {
-																					$(
-																							'.js-caution')
-																							.empty()
-																							.removeClass(
-																									'caution-msg2')
-																							.addClass(
-																									'caution-msg1')
-																							.html(
-																									"주문자명과 주문번호가 일치하는 주문이 존재하지 않습니다. 다시 입력해 주세요.<br><span>주문번호와 비밀번호를 잊으신 경우, 고객센터로 문의하여 주시기 바랍니다.</span>");
-																				}
-																			});
-															return false;
-														}
-													});
 								});
 			</script>
 		</div>
