@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<title>위즈디자인-NO85</title>
-<link href="<%=request.getContextPath()%>/views/login/login.css"
-	rel="stylesheet" type="text/css">
+<title>Login</title>
+<link href="<%=request.getContextPath()%>/views/login/login.css" rel="stylesheet" type="text/css">
+<link href="<%=request.getContextPath()%>/css/reset.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
@@ -27,22 +27,17 @@
 </style>
 </head>
 <body class="body-member body-login pc" style="">
+	<jsp:include page="/views/header/header.jsp"/>
+	<br><br><br><br>
 	<div id="wrap"></div>
-
-
 	<div id="container">
-
-
 		<!-- 본문 시작 : start 1-->
 		<div id="content">
-
-
 			<div class="stitbox">
-				<div class="mtitle">
-					<span class="mname">로그인</span>
-				</div>
+			<div class="mtitle">
+			<span class="mname">로그인</span>
 			</div>
-			<!-- titbox -->
+			</div>
 
 			<div class="member">
 				<div class="box">
@@ -98,26 +93,7 @@
 							<input type="hidden" name="mode" value="guestOrder"> <input
 								type="hidden" name="returnUrl" value="../mypage/order_view.php">
 
-							<h3 class="tit-nonmember">비회원 주문조회</h3>
-
-							<div class="login">
-								<div class="input-info">
-									<div>
-										<input type="text" name="orderNm" class="text"
-											placeholder="주문자명">
-									</div>
-									<div>
-										<input type="text" name="orderNo" class="text"
-											placeholder="주문번호">
-									</div>
-								</div>
-								<button type="submit" class="skinbtn point1 l-confirm">
-									<em>확인</em>
-								</button>
-							</div>
 					</form>
-					<p class="js-caution caution-msg2">주문번호와 비밀번호를 잊으신 경우, 고객센터로
-						문의하여 주시기 바랍니다.</p>
 				</div>
 			</div>
 			<hr>
@@ -145,7 +121,7 @@
 											.click(
 													function(e) {
 														e.preventDefault();
-														location.href = '<%= request.getContextPath() %>/views/joinForm/memberJoin.jsp';
+														location.href = '<%= request.getContextPath() %>/views/joinForm/joinAgree.jsp';
 													});
 									$('#btnFindId')
 											.click(
@@ -198,15 +174,5 @@
 		</div>
 		<!-- 본문 끝 : end -->
 	</div>
-	<!-- 절대! 지우지마세요 : Start -->
-	<!-- <div class="dn" id="layerDim">&nbsp;</div>
-	<iframe name="ifrmProcess" src="/blank.php" style="display: none"
-		width="100%" height="0" bgcolor="#000"></iframe> -->
-	<!-- 절대! 지우지마세요 : End -->
-
-	<!-- 외부 스크립트 -->
-
-
-
 </body>
 </html>

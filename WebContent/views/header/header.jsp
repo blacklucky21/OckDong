@@ -102,8 +102,8 @@
 <div class="topbar_right">
 <ul>
 
-<li><a href="../member/login.php">LOGIN</a></li>
-<li><a href="../member/join_method.php">JOIN US</a>
+<li><a href="<%= request.getContextPath() %>/views/login/login.jsp">LOGIN</a></li>
+<li><a href="<%= request.getContextPath() %>/views/joinForm/joinAgree.jsp">JOIN US</a>
 <!-- 회원가입 포인트 -->
 </li>
 
