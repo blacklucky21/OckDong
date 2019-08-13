@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>나만의 도시락</title>
+<title>나만의 도시락 만들기</title>
 </head>
 <body>
 	<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
