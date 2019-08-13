@@ -174,5 +174,6 @@
 		</div>
 		<!-- º»¹® ³¡ : end -->
 	</div>
+	<jsp:include page="/views/footer/footer.jsp"/>
 </body>
 </html>
