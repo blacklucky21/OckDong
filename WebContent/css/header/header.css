@@ -96,15 +96,9 @@
     position: relative;
 }
 
-
 a {
     color: #717171;
     text-decoration: none;
-}
-
-img {
-    border: none;
-    vertical-align: top;
 }
 
 #top.header .logoBox .search {
@@ -147,7 +141,6 @@ caption, legend {
     font-size: 13px;
     line-height: 30px;
 }
-
 
 
 #top.header .logoBox .search .image {

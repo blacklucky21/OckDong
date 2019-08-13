@@ -41,7 +41,6 @@ $(this).find("> .mypage_sub").hide();
 
 });
  })(jQuery);
-
 //LNB 레이어 메뉴
 function lnbLayer(){
     $(document).on('focusin mouseenter','.lnb > .category.type-layer > li > a',function(){
@@ -50,14 +49,12 @@ function lnbLayer(){
         $(this).parent().siblings().find('ul').removeClass('db');
         $(this).next().addClass('db');
     });
-    
     $(document).on('focusin mouseenter','.lnb > .category.type-layer > li ul li',function(){
         $(this).siblings().find('ul').removeClass('db');
         $(this).find('> ul').addClass('db');
         $(this).siblings().removeClass('dot-hide');
         $(this).next().addClass('dot-hide');
     });
-    
     $(document).on('focusin mouseleave','.lnb > .category.type-layer > li ul li',function(){
         $(this).next().removeClass('dot-hide');
     });

@@ -206,10 +206,10 @@
         <a href="" >BOTTOM</a>
         <ul>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=007001" >PANTS</a>
+                <a href="" >PANTS</a>
             </li>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=007002" >SKIRTS</a>
+                <a href="" >SKIRTS</a>
             </li>
         </ul>
     </li>
@@ -221,10 +221,6 @@
 </div>
 	</div>
 <!-- ####################### //상단메뉴영역끝 ######################### -->	
-
-<!-- 하단바로구매노출 --><div class="top-service"></div>
-
-
 
 
 <hr/>
