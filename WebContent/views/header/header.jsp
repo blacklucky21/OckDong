@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/header/header.css">
 <!--  CSS end -->
-
 </head>
 
 
