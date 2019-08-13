@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ############### 게시글css ############### */
+.contest {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif !important;	
+}
+
+.contest1 {
+  padding: 2rem;
+  background-color: #EEEFEF;
+  margin: 100px;
+}
+
+.gallery{
+  width: 100%;
+  max-width: 960px;
+  min-height: 100vh;
+  margin: 2rem auto;
+  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery-item{
+ /*  box-shadow: 2px 2px 8px -1px #3498DB; */
+ /* box-shadow: 2px 2px 8px -1px #89D179; */
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background: #000; 
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+} 
+
+.gallery-item-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: lightblue; */
+  background: #89D179; 
+  z-index:20;
+  -webkit-transition:all .5s ease;
+  transition: all .5s ease;
+  bottom:0;
+  overflow: hidden;
+
+}
+
+.gallery-item:hover .gallery-item-image{
+  bottom: 80px;
+}
+
+.gallery-item-description{
+  color:white;
+  font-size: .8rem; !impartant;
+  width: 100%;
+  height: 80px;
+  padding: .5rem .8rem;
+  /* background: #3498DB; */ 
+  background: #89D179; 
+  position: absolute;
+  bottom:0;
+}
+
+.contest_title{
+	font-size: .9rem;
+	font-weight: bold;
+	margin: auto;
+}
+
+/* ############### 순서 버튼 css ############### */
+.pagination{
+  padding: 30px 0;
+}
+
+.pagination ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination a{
+  display: inline-block;
+  padding: 10px 18px;
+  color: #222;
+}
+
+.p7 a{
+  border: 3px solid #2ecc71;
+  margin: auto 5px;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.p7 .is-active{
+  background-color: #2ecc71;
+  color: #fff;
+}
+
