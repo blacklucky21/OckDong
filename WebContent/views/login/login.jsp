@@ -27,15 +27,17 @@
 </style>
 </head>
 <body class="body-member body-login pc" style="">
-	<%@ include file="../header/header.jsp" %>
+	<jsp:include page="/views/header/header.jsp"/>
 	<br><br><br><br>
 	<div id="wrap"></div>
 	<div id="container">
 		<!-- 본문 시작 : start 1-->
 		<div id="content">
 			<div class="stitbox">
+			<div class="mtitle">
+			<span class="mname">로그인</span>
 			</div>
-			<!-- titbox -->
+			</div>
 
 			<div class="member">
 				<div class="box">

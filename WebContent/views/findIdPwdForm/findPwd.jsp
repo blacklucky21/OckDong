@@ -7,6 +7,6 @@
 <title>Find Password</title>
 </head>
 <body>
-	<%@ include file="../header/header.jsp" %>
+	<jsp:include page="/views/header/header.jsp"/>
 </body>
 </html>
