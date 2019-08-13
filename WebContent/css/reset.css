@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/**
+ * JSP 리셋 css 입니다.
+ */
+
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    color:#717171;
+    font-family:Malgun Gothic,"맑은 고딕",AppleGothic,Dotum,"돋움",sans-serif;
+    font-size:12px;
+    line-height:1.4;
+}
+h1,h2,h3,h4,h5,h6 {
+    color:#717171;
+}
+ul, ol , li {list-style:none;}
+table, th ,td {
+    margin:0;
+    padding:0;
+    border-spacing:0;
+    border:0;
+    border-collapse:collapse;
+    vertical-align:middle;
+}
+caption,legend {
+    width:0;
+    height:0;
+    visibility:hidden;
+    font-size:0;
+    line-height:0;
+    text-indent:-9999px;
+}
+fieldset, abbr, acronym {border:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal;}
+hr {display:none;}
+img {
+    border:none;
+    vertical-align:top;
+}
+a {
+    color:#717171;
+    text-decoration:none;
+    /*outline:none;*/
+}
+textarea, pre {overflow:auto;}
+textarea {
+    outline:none;
+    color:#717171;
+    font-size:12px;
+    font-family:Malgun Gothic,'맑은 고딕',Helvetica,AppleGothic,dotum,'돋움',sans-serif;
+}
+label {
+    cursor:pointer;
+    vertical-align:top;
+}
+input, select {
+    outline:none;
+    font-family:Malgun Gothic,'맑은 고딕',Helvetica,AppleGothic,dotum,'돋움',sans-serif;
+    color:#717171;
+}
+select {
+    outline:none;
+    vertical-align:top;
+    color:#717171;
+}
+button {
+    cursor:pointer;
+    background:none;
+    border:none;
+    outline:none;
+    font-family:Malgun Gothic,'맑은 고딕',Helvetica,AppleGothic,dotum,'돋움',sans-serif;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+button span {
+    position:relative;
+    z-index:-1;
+}
