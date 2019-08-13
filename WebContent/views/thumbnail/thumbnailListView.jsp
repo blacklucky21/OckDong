@@ -14,6 +14,7 @@
 <div class="contest">
  <div class="contest1">
   <div class="gallery">
+  <p class="text-green" style="font-size:40px;"><strong>나만의 도시락 자랑하기</strong></p> 
   
   <form action="">
   <table>
@@ -106,10 +107,11 @@
   </div>
   
   <!-- ############### 글쓰기 버튼 ###############  --> 
-  <div class="container">
-  <button type="button" class="btn btn-danger">Danger</button>
-	</div>
-	
+  <div class="container" id="btnwrite">
+  <button type="button" class="btn btn-danger" id="btnwrite1">UPLOAD</button>
+  </div>
+  
+  
   </div>
 </div>
 
