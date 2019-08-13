@@ -8,6 +8,7 @@
     width:1200px;
     margin:0 auto;
 }
+
 .container:after {
     content:"";
     display:block;

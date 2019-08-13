@@ -245,6 +245,7 @@
             postcode_search('zonecode', 'address', 'zipcode');
         });
 
+        
         $('#btnCompanyPostcode').click(function (e) {
             e.preventDefault();
             $('#comAddress-error, #comAddressSub-error').remove();
