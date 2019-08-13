@@ -138,7 +138,7 @@
 	font-family: Malgun Gothic, '맑은 고딕', Helvetica, AppleGothic, dotum, '돋움',
 		sans-serif;
 }
-p {
+ p {
     display: block;
     margin-block-start: 0px;
     margin-block-end: 0px;
