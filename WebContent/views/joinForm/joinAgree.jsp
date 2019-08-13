@@ -14,29 +14,16 @@
 	<jsp:include page="/views/header/header.jsp" />
 <body class="body-member body-join-agreement pc" style="">
 	<div id="container">
-
-
 		<!-- 본문 시작 : start -->
 		<div id="content">
-
 			<div class="join">
-
-
-
 				<div class="stitbox">
 					<div class="mtitle">
 						<span class="mname">회원가입</span>
 					</div>
 				</div>
 				<!-- titbox -->
-
-
-
-
-
 				<div class="top">
-
-
 					<div>
 						<span class="this"><strong>01</strong> 약관동의</span> <span><strong>02</strong>
 							정보입력</span> <span class="end"><strong>03</strong> 가입완료</span>
@@ -60,7 +47,6 @@
 							name="type">
 
 						<h3>약관동의</h3>
-
 						<p class="all-agree">
 							<input type="checkbox" class="checkbox" id="allAgree"> <label
 								for="allAgree"> <span><strong>WIZDESIGN의
@@ -262,7 +248,6 @@
 								이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기합니다.<br>
 								② "몰"과 이용자간에 제기된 전자상거래 소송에는 한국법을 적용합니다.<br> <br> <br>
 								부칙<br> <br> 1. 이 약관은 년 월 일부터 적용됩니다.<br>
-
 							</div>
 						</div>
 						<div class="terms-view">
@@ -281,290 +266,27 @@
 								법정 생년월일<br> - 보유 및 이용기간 : 회원탈퇴 후 5일까지
 							</div>
 						</div>
-						<!--  -->
-						<!--  -->
-						<!--  -->
 						<p class="msg dn">
 							<span>이용약관과 개인정보 수집 및 이용에 대한 안내 모두 동의해주세요.</span>
 						</p>
 						<!--  -->
 						<div class="btn">
-							<button class="skinbtn point2 ja-next" id="btnNextStep"
-								type="button">
+							<button class="skinbtn point2 ja-next" id="btnNextStep" type="button" onclick="btnNextStep();">
 								<em>다음단계</em>
 							</button>
 						</div>
 					</form>
 				</div>
 			</div>
-
-			<script type="text/javascript">
-					$(document)
-							.ready(
-									function() {
-										var body = $('body'), $formTerms = $('#formTerms');
-
-										$('#btnNextStep')
-												.click(
-														function() {
-															var pass = true;
-															/*
-															 * 필수 동의 항목 검증
-															 */
-															$(
-																	':checkbox.require')
-																	.each(
-																			function(
-																					idx,
-																					item) {
-																				var $item = $(item);
-																				if (!$item
-																						.prop('checked')) {
-																					pass = false;
-																					$(
-																							'p.msg',
-																							$formTerms)
-																							.removeClass(
-																									'dn')
-																							.find(
-																									'span')
-																							.text(
-																									$item
-																											.next()
-																											.text()
-																											+ "을 체크해주세요.");
-																					_
-																							.delay(
-																									function() {
-																										$item
-																												.focus();
-																									},
-																									1000);
-																					return false;
-																				}
-																			});
-															if (pass) {
-																$('p.msg')
-																		.addClass(
-																				'dn');
-																/*
-																 * 실명인증 검증
-																 */
-																if ($('input[name="RnCheckType"]').length > 0) {
-																	switch ($(
-																			'input[name="RnCheckType"]:checked')
-																			.val()) {
-																	case 'ipin':
-																		var popupWindow = window
-																				.open(
-																						"",
-																						"popupCertKey",
-																						"top=100, left=200, status=0, width=417, height=490");
-																		ifrmRnCheck.location.href = "/member/ipin/ipin_main.php?callType=joinmember";
-																		break;
-																	case 'authCellPhone':
-																		var protocol = location.protocol;
-																		var callbackUrl = "http://sampleclientjh3.godomall.com/member/authcellphone/dreamsecurity_result.php";
-																		ifrmHpauth.location.href = protocol
-																				+ "//hpauthdream.godo.co.kr/module/NEW_hpauthDream_Main.php?callType=joinmember&shopUrl="
-																				+ callbackUrl
-																				+ "&cpid=";
-																		break;
-																	default:
-																		alert("본인인증이 필요합니다.");
-																		$(
-																				'input[name="RnCheckType"]:first')
-																				.focus();
-																		break;
-																	}
-																	return false;
-																} else {
-																	$formTerms
-																			.submit();
-																}
-															}
-														});
-
-										/*
-										 * 전체 동의 체크박스 이벤트
-										 */
-										$('#allAgree', $formTerms)
-												.change(
-														function(e) {
-															e.preventDefault();
-															var $target = $(e.target), $checkbox = $(':checkbox'), $label = $checkbox
-																	.siblings('label');
-															if ($target
-																	.prop('checked') === true) {
-																$checkbox
-																		.prop(
-																				'checked',
-																				true)
-																		.val(
-																				'y');
-																$label
-																		.addClass('on');
-															} else {
-																$checkbox
-																		.prop(
-																				'checked',
-																				false)
-																		.val(
-																				'n');
-																$label
-																		.removeClass('on');
-															}
-														});
-
-										/*
-										 * 이전단계 버튼 이벤트
-										 */
-										$('#btnPrevStep', $formTerms)
-												.click(
-														function(e) {
-															e.preventDefault();
-															window.location.href = '../member/join_method.php'
-														});
-
-										/*
-										 * 약관 체크박스 이벤트
-										 */
-										$('.terms-view :checkbox', $formTerms)
-												.change(
-														function(e) {
-															e.preventDefault();
-															$('p.msg')
-																	.addClass(
-																			'dn');
-															var $target = $(e.target), $label = $target
-																	.siblings('label'), $termsView = $target
-																	.closest('.terms-view');
-															var isTermsAgreeSelect = (e.target.id === 'termsAgree3')
-																	|| (e.target.id === 'termsAgree4')
-																	|| (e.target.id === 'termsAgree5');
-															var isTargetChecked = $target
-																	.prop('checked') === true;
-
-															if (isTargetChecked) {
-																if (isTermsAgreeSelect) {
-																	$termsView
-																			.find(
-																					'.consignment-box label')
-																			.addClass(
-																					'on');
-																	$termsView
-																			.find(
-																					'.consignment-box :checkbox')
-																			.val(
-																					'y');
-																} else {
-																	$target
-																			.val('y');
-																	$label
-																			.addClass('on');
-																}
-															} else {
-																if (isTermsAgreeSelect) {
-																	$termsView
-																			.find(
-																					'.consignment-box label')
-																			.removeClass(
-																					'on');
-																	$termsView
-																			.find(
-																					'.consignment-box :checkbox')
-																			.val(
-																					'n');
-																} else {
-																	$target
-																			.val('n');
-																	$label
-																			.removeClass('on');
-																}
-															}
-														});
-									});
-				</script>
 		</div>
 		<!-- 본문 끝 : end -->
-
-	</div>
-
-
-
-	<script type="text/javascript">
-			// DOM 로드
-			$(function() {
-				$('.recent-list').todayGoods();
-			});
-
-			// 최근본상품 리스트 페이징 처리 플러그인
-			$.fn.todayGoods = function() {
-				// 기본값 세팅
-				var self = $(this);
-				var setting = {
-					page : 1,
-					total : 0,
-					rowno : 5
-				};
-				var element = {
-					goodsList : self.find('.list > ul > li'),
-					closeButton : self.find('.list > ul > li > button'),
-					prev : self.find('.paging > .prev'),
-					next : self.find('.paging > .next'),
-					paging : self.find('.paging')
-				};
-
-				// 페이지 갯수 설정
-				setting.total = Math.ceil(element.goodsList.length
-						/ setting.rowno);
-
-				// 화면 초기화 및 갱신 (페이지 및 갯수 표기)
-				var init = function() {
-					if (setting.total == 0) {
-						setting.page = 0;
-						element.paging.hide();
-					}
-					self.find('ul').hide().eq(setting.page - 1).show();
-					self.find('.paging .js-current').text(setting.page);
-					self.find('.paging .js-total').text(setting.total);
-				}
-
-				// 삭제버튼 클릭
-				element.closeButton.click(function(e) {
-					$.post('../goods/goods_ps.php', {
-						'mode' : 'delete_today_goods',
-						'goodsNo' : $(this).data('goods-no')
-					}, function(data, status) {
-						// 값이 없는 경우 성공
-						if (status == 'success' && data == '') {
-							location.reload(true);
-						} else {
-							console.log('request fail. ajax status (' + status
-									+ ')');
-						}
-					});
-				});
-
-				// 이전버튼 클릭
-				element.prev.click(function(e) {
-					setting.page = 1 == setting.page ? setting.total
-							: setting.page - 1;
-					init();
-				});
-
-				// 다음버튼 클릭
-				element.next.click(function(e) {
-					setting.page = setting.total == setting.page ? 1
-							: setting.page + 1;
-					init();
-				});
-
-				// 화면 초기화
-				init();
-			};
+		
+		<script type="text/javascript">
+			function btnNextStep() {
+				location.href="<%= request.getContextPath() %>/views/joinForm/memberJoin.jsp";
+			}
 		</script>
+
 	</div>
-	<!-- 우측 스크롤 배너 : end -->
 </body>
 </html>
