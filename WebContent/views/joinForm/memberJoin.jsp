@@ -246,6 +246,7 @@
         });
 
         
+        
         $('#btnCompanyPostcode').click(function (e) {
             e.preventDefault();
             $('#comAddress-error, #comAddressSub-error').remove();

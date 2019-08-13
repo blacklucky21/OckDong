@@ -11,6 +11,7 @@
 	rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
 	<jsp:include page="/views/header/header.jsp" />
 <body class="body-member body-join-agreement pc" style="">
