@@ -75,16 +75,6 @@
     clear: both;
 }
 
-#topside .lnb > .category.type-layer > li > a {
-    display: block;
-    padding: 0;
-    font-size: 12px;
-    color: #000;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 700;
-    line-height: 50px;
-    height: 50px;
-}
 
 #topbar .topbar_com {
     position: relative;
@@ -106,17 +96,15 @@
     position: relative;
 }
 
-
 a {
     color: #717171;
     text-decoration: none;
 }
 
-img {
-    border: none;
-    vertical-align: top;
-}
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'master' of https://github.com/blacklucky21/OckDong.git
 #top.header .logoBox .search {
     position: absolute;
     bottom: 20px;
@@ -130,6 +118,7 @@ img {
 
 fieldset, abbr, acronym {
     border: 0;
+    margin-left: 73%;
 }
 
 caption, legend {
@@ -145,7 +134,7 @@ caption, legend {
     position: relative;
     width: 300px;
     height: 35px;
-    margin: 0;
+    margin-bottom: 5%;
     border: 1px solid #DDDDDD;
 }
 
@@ -158,11 +147,6 @@ caption, legend {
     line-height: 30px;
 }
 
-input.text, input.password, input.edit {
-    padding: 0 5px;
-    outline: none;
-    font-size: 12px;
-}
 
 #top.header .logoBox .search .image {
     float: left;
@@ -177,14 +161,6 @@ input.text, input.password, input.edit {
     border-bottom: 1px solid #ddd;
     background: #fff;
     z-index: 999;
-}
-
-#topside {
-    margin: 0 auto;
-    z-index: 999;
-    width: 1250px;
-    border: 0px solid #000;
-    background: #fff;
 }
 
 .dn {
@@ -267,7 +243,7 @@ ul, ol, li {
 .topMenu.fixed {position:fixed; margin:0 auto; top:31px; width:100%; z-index:5;} /* 메뉴고정 */
 .topMenu {clear:both;width:100%;height:50px;border-top:1px solid #999999;border-bottom:1px solid #ddd;background:#fff;z-index:999;} 
 
-#topside {   margin:0 auto;  z-index:999;  width:1250px; border:0px solid #000;background:#fff; }
+#topside {   margin:0 auto;  z-index:999;  width:1250px; border:0px solid #000; }
 
 #topside .lnb > .category {   height:50px;    text-align:center; font-size:0 ; line-height:0; }
 
@@ -308,12 +284,14 @@ ul, ol, li {
      display:block;
      padding:0;
      font-size:12px;
-     color:#000;
+     color:#4a4646;
      font-family: 'Roboto',sans-serif;
      font-weight:700;
      line-height:50px;
-     height:50px;
+     height: 49px;
+     font-size: 17px;
 }
+
 #topside .lnb  > .category.type-layer > li > a:hover,
 #topside .lnb  > .category.type-layer > li > a.has-sub {
     position:relative;
@@ -323,6 +301,7 @@ ul, ol, li {
     background:#fff;
     color:#000;
     border-bottom:1px solid #000 ;
+    text-decoration: none;
 }
 #topside .lnb  > .category.type-layer > li ul {
     padding:7px 0;

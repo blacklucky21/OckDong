@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>header</title>
 <!-- js -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/header.js"></script>
@@ -165,57 +165,55 @@
     <!-- 사이드 카테고리 시작 -->
     <h2 class="dn">사이드 카테고리</h2>
     <ul class="category type-layer">
-    <li  >
-        <a href="../goods/goods_list.php?cateCd=001" >NEW</a>
+    <li>
+        <a href="">신제품</a>
     </li>
-    <li  >
-        <a href="../goods/goods_list.php?cateCd=002" >BEST ITEM</a>
+    <li>
+        <a href="">이달의 도시락</a>
     </li>
-    <li class="hoverho">
-        <a href="../goods/goods_list.php?cateCd=003" >OUTWEAR</a>
+    <li>
+        <a href="">제품</a>
         <ul>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=003001" >COAT</a>
+                <a href="" >도시락</a>
             </li>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=003002" >JACKET</a>
+                <a href="" >샐러드</a>
             </li>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=003003" >JUMPER</a>
+                <a href="" >단백질</a>
             </li>
         </ul>
     </li>
     <li  >
-        <a href="../goods/goods_list.php?cateCd=004" >TEE&TOP</a>
+        <a href="">정기배송</a>
         <ul>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=004001" >TEE</a>
+                <a href="">TEE</a>
             </li>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=004002" >TOP</a>
+                <a href="">TOP</a>
             </li>
         </ul>
     </li>
     <li  >
-        <a href="../goods/goods_list.php?cateCd=005" >BLOUSE</a>
+        <a href="" >나만의 도시락</a>
     </li>
     <li  >
-        <a href="../goods/goods_list.php?cateCd=006" >DRESS</a>
+        <a href="" >DRESS</a>
     </li>
     <li  >
-        <a href="../goods/goods_list.php?cateCd=007" >BOTTOM</a>
+        <a href="" >BOTTOM</a>
         <ul>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=007001" >PANTS</a>
+                <a href="" >PANTS</a>
             </li>
             <li  >
-                <a href="../goods/goods_list.php?cateCd=007002" >SKIRTS</a>
+                <a href="" >SKIRTS</a>
             </li>
         </ul>
     </li>
-    <li  >
-        <a href="../goods/goods_list.php?cateCd=008" >SHOES</a>
-    </li>
+   
 </ul>
 <hr/>
     <!-- 사이드 카테고리 끝 -->
@@ -223,10 +221,6 @@
 </div>
 	</div>
 <!-- ####################### //상단메뉴영역끝 ######################### -->	
-
-<!-- 하단바로구매노출 --><div class="top-service"></div>
-
-
 
 
 <hr/>
