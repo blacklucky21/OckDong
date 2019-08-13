@@ -138,6 +138,7 @@
 				}
 
 				$(document)
+				
 						.ready(
 								function() {
 									$('#btnJoinMember')
