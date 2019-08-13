@@ -118,6 +118,7 @@ a {
 
 fieldset, abbr, acronym {
     border: 0;
+    margin-left: 73%;
 }
 
 caption, legend {
@@ -133,7 +134,7 @@ caption, legend {
     position: relative;
     width: 300px;
     height: 35px;
-    margin: 0;
+    margin-bottom: 5%;
     border: 1px solid #DDDDDD;
 }
 
