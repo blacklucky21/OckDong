@@ -72,32 +72,21 @@ $(function() {
 });
 
 
-/*상하이동소스*/
-
-$(function() {
- var $elem = $('#wrap');
- 
- $('#scrollup').fadeIn('slow');
- $('#scrolldown').fadeIn('slow');  
- 
- $(window).bind('scrollstart', function(){
-     $('#scrollup,#scrolldown').stop().animate({'opacity':'0.2'});
- });
- $(window).bind('scrollstop', function(){
-     $('#nav_up,#nav_down').stop().animate({'opacity':'1'});
- });
- 
- $('#scrolldown').click(
-     function (e) {
-         $('html, body').animate({scrollTop: $elem.height()}, 300);
-     }
- );
- $('#scrollup').click(
-     function (e) {
-         $('html, body').animate({scrollTop: '0px'}, 300);
-     }
- );
+/* 스크롤 이동 */
+$(window).scroll(function(){
+	var y=$(this).scrollTop();
+	if( y > 300 ){
+		$('.btn_scroll').fadeIn();
+	} else {
+		$('.btn_scroll').fadeOut();
+	}
 });
+function scrollup(){
+	$('html, body').animate({scrollTop:0}, 'slow');
+}
+function scrolldown(){
+	$('html, body').animate({scrollTop:$(document).height()}, 'slow');
+}
 
 
 

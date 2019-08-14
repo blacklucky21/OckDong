@@ -21,8 +21,8 @@
 <body>
 <div class="top-area"></div>
 <div id="pagescroll">
-    <p><a id="scrollup" href="#"><img src="${ pageContext.request.contextPath }/img/up.png"/></a></p>
-    <p><a id="scrolldown" href="#"><img src="${ pageContext.request.contextPath }/img/btn_down.png"/></a></p>
+    <p onclick = "scrollup();"><a id="scrollup" href="#"><img src="${ pageContext.request.contextPath }/img/up.png"/></a></p>
+    <p onclick = "scrolldown();"><a id="scrolldown" href="#"><img src="${ pageContext.request.contextPath }/img/btn_down.png"/></a></p>
 </div>
 <div id="wrap">
 

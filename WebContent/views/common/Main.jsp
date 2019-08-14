@@ -7,11 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!-- 헤더 -->
-<!-- jsp:includ 를 사용 하면 Context root 자동으로 포함된다. -->
-<jsp:include page='/views/header/header.jsp'/> 
-
-<jsp:include page='/views/footer/footer.jsp'>
-<h2> 메인 뷰</h2>
+<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
+	<jsp:include page="/views/header/header.jsp"/>
+	
+	<div style="width:100%; height:1000px;">
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	<jsp:include page="/views/footer/footer.jsp"/>
 </body>
 </html>
