@@ -9,12 +9,9 @@
 </head>
 <body>
 	<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
-	<jsp:include page="/views/header/header.jsp"/>
+	<jsp:include page="/views/common/Main.jsp"/>
 	
-	<div style="width:100%; height:1000px;">
 	
-	</div>
 	
-	<jsp:include page="/views/footer/footer.jsp"/>
 </body>
 </html>

@@ -38,8 +38,7 @@
 			<div style="width: 60%; height: 100%;">
 				<div>
 					<dl>
-						<dt>
-						</dt>
+						<dt></dt>
 						<dd></dd>
 						<dd></dd>
 						<dd></dd>
