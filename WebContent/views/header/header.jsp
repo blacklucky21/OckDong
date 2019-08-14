@@ -21,9 +21,10 @@
 <body>
 <div class="top-area"></div>
 <div id="pagescroll">
-    <p><a id="scrollup" href="#"><img src="${ pageContext.request.contextPath }/img/up.png"/></a></p>
-    <p><a id="scrolldown" href="#"><img src="${ pageContext.request.contextPath }/img/btn_down.png"/></a></p>
+    <p onclick = "scrollup();"><a id="scrollup" href="#"><img src="${ pageContext.request.contextPath }/img/up.png"/></a></p>
+    <p onclick = "scrolldown();"><a id="scrolldown" href="#"><img src="${ pageContext.request.contextPath }/img/btn_down.png"/></a></p>
 </div>
+<div id="wrap">
 
     <div id="top" class="header">
 <!-- 퀵 검색 폼 -->
@@ -137,16 +138,7 @@
             <div>
                 <input type="text" id="search-form" name="keyword" class="text" title="" placeholder="" autocomplete="off" />
                 <input type="image" class="image" id="btnSearchTop" title="검색" value="검색" src="<%= request.getContextPath()%>/img/Search.png"  width="28" height="30" alt="검색"/>
-                <div class="search-area dn">
-                    <input type="hidden" name="recentCount" value="10" />
-                    <div class="recent-area">
-                        <ul class="recent-list">
-                            <li class="li-tit">최근검색어</li>
-                            <li class="no-data">최근 검색어가 없습니다.</li>
-                        </ul>
-                    </div>
-                    
-                </div>
+                
             </div>
         </fieldset>
     </form>
@@ -172,7 +164,7 @@
     </li>
     <li>
         <a href="">제품</a>
-        <ul>
+        <ul class="sub_menu">
             <li  >
                 <a href="" >도시락</a>
             </li>
@@ -183,10 +175,10 @@
                 <a href="" >단백질</a>
             </li>
         </ul>
-    </li>
+   </li>
     <li  >
         <a href="">정기배송</a>
-        <ul>
+        <ul class="sub_menu">
             <li  >
                 <a href="">TEE</a>
             </li>
@@ -203,7 +195,7 @@
     </li>
     <li  >
         <a href="" >BOTTOM</a>
-        <ul>
+        <ul class="sub_menu">
             <li  >
                 <a href="" >PANTS</a>
             </li>
@@ -223,6 +215,7 @@
 
 
 <hr/>
+    </div>
     </div>
 </body>
 </html>

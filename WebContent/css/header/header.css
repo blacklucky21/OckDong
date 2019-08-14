@@ -1,3 +1,8 @@
+/* 천제를 감싸는 영역 */
+#wrap {
+    width:100%;
+    min-width:1200px;
+}
 
 /* 상단 오른쪽 */
 #topbar .wizsubmenu .topbar_right {
@@ -54,7 +59,7 @@
     padding: 7px 0;
 }
 #topside .lnb > .category.type-layer ul {
-    display: none;
+   /*  display: none; */
     width: 145px;
     border: 1px solid #dadada;
 }
@@ -101,25 +106,12 @@ a {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/blacklucky21/OckDong.git
-#top.header .logoBox .search {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-}
 
 .frmSearchTop {
     display: block;
     margin-top: 0em;
 }
 
-fieldset, abbr, acronym {
-    border: 0;
-    margin-left: 73%;
-}
 
 caption, legend {
     width: 0;
@@ -134,8 +126,9 @@ caption, legend {
     position: relative;
     width: 300px;
     height: 35px;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     border: 1px solid #DDDDDD;
+    margin-left: 75%;
 }
 
 #top.header .logoBox .search .text {
@@ -166,7 +159,6 @@ caption, legend {
 .dn {
     display: none !important;
 }
-
 
 
 ul, ol, li {
@@ -250,19 +242,16 @@ ul, ol, li {
 
 
 /*
-	레이아웃 lnb 레이어형
+	레이아웃 lnb 레이어형 여기가 하단 드롭바 나오게 해야 한다.
 */
 #topside .lnb  > .category.type-layer ul {
     display:none;
     width:145px;
     border:1px solid #dadada;
 }
-#topside .lnb  > .category.type-layer ul li {
 
-}
 #topside .lnb  > .category.type-layer ul li a {
     margin:0 18px;
-    background:url('../img/lnb/dot-3x1-d2d2d2.png') repeat-x left top;
 }
 #topside .lnb  > .category.type-layer ul li.dot-hide > a {  background:none;
 }
@@ -306,26 +295,18 @@ ul, ol, li {
 #topside .lnb  > .category.type-layer > li ul {
     padding:7px 0;
 }
-#topside .lnb  > .category.type-layer > li > ul {
-    position:absolute;
-    top:50px;
-    left:50%;
-    margin-left: -69px; 
-    z-index:20;
-    background:#fff;
-}
+
 #topside .lnb  > .category.type-layer > li > ul > li {
     position:relative;
+    margin: 6%;
 }
 #topside .lnb  > .category.type-layer > li > ul > li > a {
-    display:block;
-    padding: 5px 0 7px;
-     font-size:12px;
-     color:#000;
-     font-family: 'Roboto','Nanum Gothic',sans-serif; 
-     font-weight:500;
-     line-height:20px;
-     height:20px; 
+   display: block;
+    font-size: 17px;
+    color: #000;
+    font-weight: px;
+    line-height: 20px;
+    text-decoration: none;
 }
 #topside .lnb  > .category.type-layer > li > ul > li:first-child > a {
     background:none;
@@ -365,7 +346,6 @@ ul, ol, li {
 }
 #topside .lnb  > .category.type-layer > li > ul li a {
     color:#333;
-    text-indent:6px;
 }
 #topside .lnb  > .category.type-layer > li.tit {
     padding:9px 0 12px;
@@ -375,10 +355,11 @@ ul, ol, li {
     text-indent:17px;
     cursor:default;
 }
-#topside .lnb  > .category.type-layer > li.tit img {
-    width:178px;
-    margin-left:-17px;
+
+#topside .lnb  > .category.type-layer > li:hover .sub_menu{
+	display:block;
 }
+
 #topside .lnb  > .category.type-layer > li > ul li.tit {
     padding: 5px 0 7px;
     color:#333;
@@ -386,18 +367,8 @@ ul, ol, li {
     text-indent:16px;
     cursor:default;
 }
-#topside .lnb  > .category.type-layer > li > ul li.tit img {
-   /* width:178px; */
-    margin-left:-16px;
-}
 #topside .lnb  > .category.type-layer > li > ul li.tit:hover {
     background:none;
-}
-#topside .lnb  > .category.type-layer > li > ul li.tit + li.dot-hide a {
-    background:url('../img/lnb/dot-3x1-d2d2d2.png') repeat-x left top;
-}
-#topside .lnb  > .category.type-layer > li > ul li.tit + li.dot-hide:hover a {
-	background-image:none;
 }
 /* 카테고리 타이틀 적용 관련 css 수정  끝 */
 
