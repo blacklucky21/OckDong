@@ -3,7 +3,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="../common/css/thumbnail/thumbnailListView.css">
+<link rel="stylesheet" type="text/css" href="../common/css/boast/boastListView.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <title>도시락 자랑 게시판</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 <div class="contest">
  <div class="contest1">
   <div class="gallery">
-  <p class="text-green" style="font-size:40px;"><strong>나만의 도시락 자랑하기</strong></p> 
+  <p class="text-green" style="font-size:40px;"><strong>나만의 도시락</strong></p> 
   
   <form action="">
   <table>
@@ -108,7 +109,7 @@
   
   <!-- ############### 글쓰기 버튼 ###############  --> 
   <div class="container" id="btnwrite">
-  <button type="button" class="btn btn-danger" id="btnwrite1">UPLOAD</button>
+  <button class="btn btn-danger" id="btnwrite1" onclick="location.href='<%= request.getContextPath() %>/views/boast/boastInsertForm'">글쓰기</button>
   </div>
   
   
