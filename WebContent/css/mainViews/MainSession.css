@@ -1,0 +1,35 @@
+
+#first_ul .first_li{
+	float:left;
+	margin-left: 8%;
+
+}
+#intro{
+	margin-bottom: 100px;
+    width: 1200px;
+    height: 300px;
+    margin: 2% auto;
+    border-bottom: 2px solid #000;
+	
+}
+#wizmainbox {
+    margin-bottom: 100px;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#wizmainbox #box_left {
+    float: left;
+    position: relative;
+    width: 580px;
+   height: 340px;
+    overflow: hidden;
+}
+
+#box_right {
+    float: left;
+    width: 580px;
+    height: 340px;
+    margin-left: 38px;
+}

@@ -24,7 +24,6 @@
     <p onclick = "scrollup();"><a id="scrollup" href="#"><img src="${ pageContext.request.contextPath }/img/up.png"/></a></p>
     <p onclick = "scrolldown();"><a id="scrolldown" href="#"><img src="${ pageContext.request.contextPath }/img/btn_down.png"/></a></p>
 </div>
-<div id="wrap">
 
     <div id="top" class="header">
 <!-- 퀵 검색 폼 -->
@@ -46,16 +45,14 @@
 <ul>
 <li class="topbar_cate"><a href="#" ><img src="${ pageContext.request.contextPath }/img/list_icon.png"> CATEGORIES</a>
 <div class="cate_sub">
-<div><a href="">NEW 5% DC</a></div>
+<div><a href="">NEW product</a></div>
 <div><a href="">BEST ITEM</a></div>
-<div><a href="">OUTER</a></div>
-<div><a href="">TOP</a></div>
-<div><a href="">BOTTOM</a></div>
-<div><a href="">DRESS</a></div>
-<div><a href="">SHOES&BAG</a></div>
-<div><a href="">ACC</a></div>
-<div><a href="">SALE</a></div>
-<div><a href="">ONLY YOU</a></div>
+<div><a href="">My own lunch box</a></div>
+<div><a></a></div>
+<div><a href="">Lunch box of the month</a></div>
+<div><a></a></div>
+<div><a href="">Regular delivery</a></div>
+<div><a></a></div>
 </div>
 </li>
 
@@ -215,7 +212,6 @@
 
 
 <hr/>
-    </div>
     </div>
 </body>
 </html>
