@@ -29,15 +29,16 @@
 		</div>
 	</div>
 	
-	<div id="wizmainbox intro">
+	
+	<div id="intro">
 		<ul id="first_ul">
 			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></li>
 			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg"></li>
 			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
-			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
+			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
 		</ul>
 	</div>
-	
+	<!-- 이동 -->
 	<div id="wizmainbox">
 		<!-- 왼쪽 부분 -->
 		<div id="box_left" class="manue_second">
@@ -49,9 +50,51 @@
 		</div>
 	
 	</div>
+	<!--  -->
+	<div class="item-display-wrap">
+	<div class="mtitbox">
+		<div class="mtitle">
+			<span class="mname">NEW PRODUCTS</span>
+		</div>
+	</div>
+	<div class="cate_box cate_box1">
+		<div class="top_title">
+			<p class="title">도시락</p>
+			<p class="update">전 주 일주일 간의 데이터를 기준으로 매주 월요일 에 업데이트 됩니다.</p>
+		</div>
 
-
-
+	<div>
+		<dl class="sort">
+			<dt >가격대별 베스트</dt>
+			<dd class="active" onclick="bestPrice('1002','',this); return false;">전체</dd>
+			<dd class=""  onclick="bestPrice('1002','',this); return false;">3만원 미만</dd>
+			<dd class=""  onclick="bestPrice('1002','',this); return false;">5만원 미만</dd>
+			<dd class=""  onclick="bestPrice('1002','',this); return false;">5만원 이상</dd>
+		</dl>
+		<ul class="prd_basic">
+		<!-- 일단 임시로 6개 DB 넣으면 채울거 -->
+			<li>
+				<div class="box">
+					<div class="img">
+						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
+					</div>
+					<div class="">
+					
+					</div>
+				</div>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		
+		</ul>
+	</div>
+	
+	</div>
+	
+	</div>
 
 	<!--  -->
 	<jsp:include page="/views/footer/footer.jsp"/>
