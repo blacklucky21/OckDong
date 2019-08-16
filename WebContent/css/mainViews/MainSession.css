@@ -33,7 +33,7 @@
     margin-left: 38px;
 }
 
-.vui-slider, .first_li, .manue_second ,.sort dd{
+.vui-slider, .first_li, .manue_second , .sort dd{
 	cursor:pointer;
 }
 /* 메뉴 상태 */

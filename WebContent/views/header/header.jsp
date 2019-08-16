@@ -187,20 +187,8 @@
     <li  >
         <a href="" >나만의 도시락</a>
     </li>
-    <li  >
-        <a href="" >DRESS</a>
-    </li>
-    <li  >
-        <a href="" >BOTTOM</a>
-        <ul class="sub_menu">
-            <li  >
-                <a href="" >PANTS</a>
-            </li>
-            <li  >
-                <a href="" >SKIRTS</a>
-            </li>
-        </ul>
-    </li>
+   
+   
    
 </ul>
 <hr/>

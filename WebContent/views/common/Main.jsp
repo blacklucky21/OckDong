@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- css 시작 -->
-<link rel="stylesheet" href="${ pageContext.request.contextPath }>/css/bootstrap.css">
+<link rel="stylesheet" href="${ pageContext.request.contextPath }/css/bootstrap.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/mainViews/slide.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/mainViews/MainSession.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -29,7 +29,7 @@
 		</div>
 	</div>
 	
-	
+	<!-- 회사 소개 -->
 	<div id="intro">
 		<ul id="first_ul">
 			<li class="first_li" id="f1"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></li>
@@ -38,19 +38,22 @@
 			<li class="first_li" id="f4"><img id="f4" src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
 		</ul>
 	</div>
+	<!-- 회사 소개 이미지 -->
+	
+	
 	<!-- 이동 -->
 	<div id="wizmainbox">
 		<!-- 왼쪽 부분 -->
-		<div id="box_left" class="manue_second">
+		<div id="box_left" class="first_li">
 			<img src="${ pageContext.request.contextPath }/img/mainViews/1.jpg" style="width:100%;height:100%;"/>
 		</div>
 		<!-- 우측 부분 -->
-		<div id="box_right" class="manue_second">
+		<div id="box_right" class="first_li">
 			<img src="${ pageContext.request.contextPath }/img/mainViews/3.jpg" style="width:100%;height:100%; "/>
 		</div>
 	
 	</div>
-	<!--  -->
+	<!-- 도시락 리스트 생산 품 -->
 	<div class="item-display-wrap">
 	<div class="mtitbox">
 		<div class="mtitle">
@@ -95,8 +98,9 @@
 	</div>
 	
 	</div>
-
-	<!--  -->
+	<!-- 리스트 끝 -->
+	
+	<!-- 풋터  -->
 	<jsp:include page="/views/footer/footer.jsp"/>
 	
 	
