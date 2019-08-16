@@ -1,0 +1,1337 @@
+.ta-l {
+	font-size:12px;
+}
+em {
+font-style:normal;
+}
+.orderplz{
+text-align:left;
+}
+.content fieldset {
+	border: 0;
+	margin: 0;
+}
+
+.content fieldset legend {
+	display: none;
+}
+
+.termAgree-check{
+text-align:left
+}
+/*
+    상단 스탭형 타이틀
+*/
+.step-top {
+	overflow: hidden;
+	padding: 30px 0;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.step-top.none-btm-bd {
+	border: none;
+}
+
+.step-top h2 {
+	float: left;
+	padding: 0 0 0 3px;
+	color: #111;
+	font-size: 24px;
+}
+
+.step-top div {
+	float: right;
+	padding: 10px 0 0;
+}
+
+.step-top div span {
+	margin: 0 12px 0 0;
+	padding: 0 27px 0 0;
+	background: url('../../img/etc/join-step.png') no-repeat right 7px;
+	color: #bdbcbc;
+	font-size: 16px;
+}
+
+.step-top div span.this {
+	background: url('../../img/etc/join-step-this.png') no-repeat right 7px;
+	color: #3e3d3c;
+	font-weight: bold;
+}
+
+.step-top div span.this strong {
+	
+}
+
+.step-top div span.end {
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+
+/*input text*/
+.txt-field.hs .text {
+    width:100%;
+    height:24px;
+    padding:0;
+    border:1px solid #fff;
+    color:#979797;
+    line-height:24px;
+}
+/*
+    텍스트 필드
+*/
+.txt-field {
+    position:relative;
+    width:auto;
+    height:33px; !important;
+    padding:0 10px;
+    background:#fff;
+    border:1px solid #d0d0d0;
+}
+span.txt-field {
+    display:inline-block;
+}
+.txt-field label {
+    position:absolute;
+    top:8px;
+    left:11px;
+    color:#444;
+    cursor:text;
+}
+.txt-field .text {
+    width:100%;
+    height:31px;
+    padding:0;
+    border:1px solid #fff;
+    color:#444;
+    line-height:31px;
+}
+.txt-field .keyword {
+    width:100%;
+    height:31px;
+    padding:0;
+    border:1px solid #fff;
+    color:#444;
+    line-height:28px;
+}
+
+/*
+    주문시작
+*/
+.order-page {
+	
+}
+
+.order-page .tit {
+	overflow: hidden;
+	padding: 33px 0 16px;
+}
+
+.order-page .tit h3 {
+	float: left;
+	padding: 0;
+}
+
+.order-page .tit p {
+	float: left;
+	padding: 8px 0 0 20px;
+}
+
+.order-page .step-top {
+	
+}
+
+.order-page .table1 table {
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.order-page .table1 table .btn-harmony {
+	
+}
+
+.order-page .table1 table .btn-harmony strong {
+	margin: 0 8px 0 0;
+}
+
+.order-page .table1 table .btn-harmony .normal-btn {
+	vertical-align: -6px;
+}
+
+.order-page .table1 table .coupon {
+	padding: 0 0 10px;
+}
+
+.order-page .table1.type1 table td {
+	height: auto;
+	padding: 20px 15px;
+	border-bottom: none;
+	border-top: 1px solid #dbdbdb;
+	white-space: nowrap;
+}
+
+.order-page .table1.type1 table td img {
+	vertical-align: middle;
+}
+
+.order-page .table1.type1 table .this-product {
+	border-bottom: none;
+}
+
+.order-page .table1.type1 table .no-data {
+	height: 86px;
+	text-align: center;
+}
+
+.order-page .table1.type1 table .gi {
+	padding-left: 15px;
+	padding-right: 0;
+	white-space: normal;
+}
+
+.order-page .table1.type1 table .gi>span {
+	display: table-cell;
+}
+
+.order-page .table1.type1 table .gi>span img {
+	min-width: 40px;
+	min-height: 40px;
+	border: 1px solid #dbdbdb;
+}
+
+.order-page .table1.type1 table .gi>div {
+	display: table-cell;
+	padding: 0 0 0 12px;
+	vertical-align: middle;
+}
+
+.order-page .table1.type1 table .gi>div>.caution-msg1 {
+	display: block;
+	margin: 0;
+}
+
+.order-page .table1.type1 table .gi>div>a {
+	color: #444;
+}
+
+.order-page .table1.type1 table .gi>div>a:hover {
+	text-decoration: underline;
+}
+
+.order-page .table1.type1 table .gi>div>dl, .cart-estimate .contents table dl
+	{
+	padding: 2px 0 0;
+	color: #a9a9a9;
+	font-size: 11px;
+}
+
+.order-page .table1.type1 table .gi>div>dl dt, .cart-estimate .contents table dl dt
+	{
+	display: inline;
+}
+
+.order-page .table1.type1 table .gi>div>dl dd, .cart-estimate .contents table dl dd
+	{
+	display: inline;
+}
+
+.order-page .table1.type1 table .count {
+	
+}
+
+.order-page .table1.type1 table .count .text {
+	width: 26px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #dbdbdb;
+	text-align: center;
+}
+
+.order-page .table1.type1 table tr.add.fir td {
+	padding: 20px 0 10px;
+	background: url('../img/etc/dotted-1x3-b4b4b4.png') repeat-x left top;
+}
+
+.order-page .table1.type1 table tr.add td {
+	padding: 0 0 10px;
+	border-top: none;
+}
+
+.order-page .table1.type1 table tr.add.last td {
+	padding: 0 0 20px;
+}
+
+.order-page .table1.type1 table tr.add.single td {
+	padding: 20px 0;
+	background: url('../img/etc/dotted-1x3-b4b4b4.png') repeat-x left top;
+}
+
+.order-page .table1.type1 table tr.op td {
+	padding: 20px 0;
+	background: url('../img/etc/dotted-1x3-b4b4b4.png') repeat-x left top;
+	border-top: none;
+}
+
+.order-page .table1.type1 table .supplier-total {
+	background: #f7f7f7;
+	color: #666;
+	text-align: right;
+}
+
+.order-page .table1.type1 table .supplier-total span {
+	margin: 0 0 0 6px;
+}
+
+.order-page .table1.type1 table .supplier-total span strong {
+	position: relative;
+	top: 1px;
+	font-size: 14px;
+}
+
+.order-page .table1.type1 table .supplier-total span strong.total {
+	color: #333;
+}
+
+.order-page .table1.type1 table .supplier-total img {
+	margin: 0 10px 0 0;
+	vertical-align: -5px;
+}
+
+.order-page .table1.type1 .gift-condition {
+	line-height: 20px;
+	text-align: center;
+}
+
+.order-page .table1.type1 .gift-condition strong {
+	color: #3e3d3c;
+}
+
+.order-page .table1.type1 .gift-choice {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.order-page .table1.type1 .gift-choice ul {
+	overflow: hidden;
+	padding: 0 0 20px;
+}
+
+.order-page .table1.type1 .gift-choice ul li {
+	position: relative;
+	float: left;
+	width: 80px;
+	margin: 20px 20px 0 0;
+	white-space: normal;
+}
+
+.order-page .table1.type1 .gift-choice ul li .checkbox {
+	position: absolute;
+	left: 1px;
+	top: 2px;
+	z-index: -1;
+}
+
+.order-page .table1.type1 .gift-choice ul li label {
+	display: block;
+	width: 100%;
+}
+
+.order-page .table1.type1 .gift-choice ul li label img {
+	width: 80px;
+	height: 80px;
+}
+
+.order-page .table1.type1 .gift-choice ul li label .txt {
+	display: block;
+	margin: 10px 0 0;
+	padding: 22px 0 0;
+	background: url('../img/etc/check-off-s.png') no-repeat center top;
+	line-height: 16px;
+	text-align: center;
+	word-break: keep-all;
+}
+
+.order-page .table1.type1 .gift-choice ul li label .check {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 78px;
+	height: 78px;
+	border: 1px solid #dbdbdb;
+}
+
+.order-page .table1.type1 .gift-choice ul li label.on .check {
+	width: 76px;
+	height: 76px;
+	border: 1px solid #3e3d3c;
+	/
+	*
+	상품상세페이지
+	옵션부분
+	라인
+	*/
+}
+
+.order-page .table1.type1 .gift-choice ul li label.on .txt {
+	background: url('../img/etc/check-on-s.png') no-repeat center top;
+	font-weight: bold;
+}
+
+.order-page .table1.type1 table .benefits {
+	padding-left: 30px !important;
+}
+
+.order-page .table1.type1 table .benefits dl {
+	color: #888;
+	line-height: 20px;
+}
+
+.order-page .table1.type1 table .benefits dl dt {
+	padding: 0 0 0 20px;
+}
+
+.order-page .table1.type1 table .benefits dl dd {
+	
+}
+
+.order-page .table1.type1 table .benefits dl dd strong {
+	color: #444;
+}
+
+.order-page .table1.type1 table .benefits dl.sale dt {
+	background: url('../img/icon/sale.png') no-repeat left 4px;
+}
+
+.order-page .table1.type1 table .benefits dl.mileage {
+	margin: 20px 0 0;
+}
+
+.order-page .table1.type1 table .benefits dl.mileage dt {
+	background: url('../img/icon/mileage.png') no-repeat left 4px;
+}
+
+.order-page .table1 table .g-add .gi {
+	padding: 5px 0;
+}
+
+.order-page .table1 table .cb-array {
+	padding-top: 33px !important;
+	vertical-align: top;
+}
+
+.order-page .table1 table .price {
+	color: #2b2b2b;
+	font-size: 13px;
+}
+
+.order-page .table1 table p {
+	line-height: 22px;
+}
+
+.order-page .table1 table tbody td:first-child .form-element,
+	.order-page .table1 table thead th .form-element {
+	width: 17px;
+	height: 16px;
+	min-height: auto;
+	margin: 0;
+	background: #F9F9F9;
+}
+
+.order-page .table1 table tbody td:first-child .form-element label,
+	.order-page .table1 table thead th .form-element label {
+	width: 17px;
+	height: 16px;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+.order-page .table1 table thead th .form-element label {
+	background-color: #F9F9F9;
+}
+
+.order-page .btn-move-home {
+	display: inline-block;
+	margin: 22px 0 0;
+	padding: 0 0 0 12px;
+	background: url('../img/etc/bl-arrow-left.png') no-repeat 2px 50%;
+	border-bottom: 1px solid #979797;
+}
+
+.order-page .price-box {
+	display: table;
+	width: 1200px;
+	margin: 14px 0 0;
+	border: 1px solid #d6d6d6;
+}
+
+.order-page .price-box>div {
+	display: table-cell;
+	padding: 38px 40px 28px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.order-page .price-box>div p {
+	padding: 0 0 5px;
+	font-size: 15px;
+}
+
+.order-page .price-box>div p>span {
+	display: inline-block;
+}
+
+.order-page .price-box>div p .detail {
+	
+}
+
+.order-page .price-box>div p .detail em {
+	color: #3e3d3c;
+	font-weight: bold;
+}
+
+.order-page .price-box>div p .detail strong {
+	position: relative;
+	top: 1px;
+	color: #000;
+	font-size: 18px;
+}
+
+.order-page .price-box>div p .total {
+	color: #3e3d3c;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.order-page .price-box>div p .total strong {
+	position: relative;
+	top: 3px;
+	font-size: 24px;
+}
+
+.order-page .price-box>div>span {
+	color: #3e3d3c;
+}
+
+.order-page .price-box>div img {
+	margin: 0 10px;
+	vertical-align: -6px;
+}
+
+.order-page .cart-caution {
+	overflow: hidden;
+}
+
+.order-page .cart-caution .caution-msg1 {
+	float: right;
+	margin-top: 9px;
+}
+
+.order-page .type-horizontal .list .wrap {
+	width: 940px;
+}
+
+.order-page .terms {
+	margin: 20px 0 0;
+	padding: 20px 37px;
+	border: 1px solid #dcdcdc;
+}
+
+.order-page .terms.not-member {
+	margin: 80px 0 0;
+}
+
+.order-page .terms h4 {
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.order-page .terms .ctt {
+
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 150px;
+	margin: 20px 0 0;
+	padding: 20px;
+	background: #f7f7f7;
+	line-height: 18px;
+}
+
+.order-page .terms .form-element {
+	margin: 13px 0 0;
+}
+
+.order-page .terms .form-element label.on {
+	font-weight: bold;
+}
+
+.order-page h3 {
+	padding: 0 0 16px;
+	color: #000;
+	font-size: 20px;
+	text-align:left;
+}
+
+.order-page h3.fir {
+	padding-top: 33px;
+}
+
+.order-page .tit-supplier {
+	padding: 34px 0 14px 3px;
+	color: #333;
+	font-size: 16px;
+}
+
+.order-page .item-display h3 {
+	padding-top: 53px;
+}
+
+.order-page .join-form {
+	
+}
+
+.order-page .join-form .tit {
+	padding-bottom: 19px;
+}
+
+.order-page .join-form h3 {
+	padding-top: 75px;
+	font-weight: bold;
+}
+
+.order-page .table1 table tbody th {
+	padding: 15px 0 0 35px;
+	vertical-align: top;
+}
+
+.order-page .table1 table tbody th.required {
+	background: #f9f9f9 url('../img/etc/squre-4x4-red.png') no-repeat 20px
+		22px;
+}
+
+.order-page .table1 table td {
+	height: 28px;
+	padding: 10px 20px;
+}
+
+.order-page .table1 table td .shipping {
+	vertical-align: 0;
+}
+
+.order-page .table1 table td .total {
+	font-size: 18px;
+}
+
+.order-page .table1 table td .space-l20 {
+	margin: 0 0 0 20px;
+}
+
+.order-page .table1 table .final {
+	font-size: 16px;
+}
+
+.order-page .table1 table .final strong {
+	font-size: 20px;
+}
+
+.order-page .table1 table span.form-element {
+	display: inline-block;
+	min-height: 20px;
+	margin-right: 30px;
+}
+
+.order-page .table1 table td .sa {
+	overflow: hidden;
+	padding: 8px 0 0;
+}
+
+.order-page .table1 table td .sa .txt-field.hs {
+	float: left;
+	margin-right: 7px;
+}
+
+.order-page .table1 table td .sa .form-element {
+	margin-top: 4px;
+}
+
+.order-page .table1 table td .pay-benefits {
+	
+}
+
+.order-page .table1 table td .pay-benefits p {
+	margin: 5px 0;
+	padding: 0 0 0 20px;
+	line-height: 1.5;
+}
+
+.order-page .table1 table td .pay-benefits p span {
+	color: #979797;
+}
+
+.order-page .table1 table td .pay-benefits p.sale {
+	background: url('../img/icon/sale.png') no-repeat left 4px;
+}
+
+.order-page .table1 table td .pay-benefits p.mileage {
+	background: url('../img/icon/mileage.png') no-repeat left 4px;
+}
+
+.order-page .order-completion {
+	margin: 40px 0 0;
+	padding: 128px 0 0;
+	background: url('../img/etc/order-completion.png') no-repeat center top;
+	text-align: center;
+}
+
+.order-page .order-completion strong {
+	display: block;
+	color: #111;
+	font-size: 22px;
+}
+
+.order-page .order-completion span {
+	display: block;
+	padding: 10px 0 0;
+	color: #444;
+	font-size: 14px;
+}
+
+.order-page .order-fail {
+	margin: 40px 0 0;
+	padding: 128px 0 0;
+	background: url('../img/etc/order-fail.png') no-repeat center top;
+	text-align: center;
+}
+
+.order-page .order-fail strong {
+	display: block;
+	color: #111;
+	font-size: 22px;
+}
+
+.order-page .order-fail span {
+	display: block;
+	padding: 10px 0 0;
+	color: #444;
+	font-size: 14px;
+}
+
+.order-page .btn {
+	padding: 50px 0 0;
+	text-align: center;
+}
+
+.order-page .how-to-pay {
+	
+}
+
+.order-page .how-to-pay label img {
+	pointer-events: none;
+}
+
+.order-page .how-to-pay h3 {
+	padding-bottom: 7px;
+}
+
+.order-page .how-to-pay>p {
+	
+}
+
+.order-page .how-to-pay .method {
+	margin: 16px 0 0;
+	border-top: 1px solid #717171;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.order-page .how-to-pay .method .form-element {
+	margin: 0 14px 0 24px;
+}
+
+.order-page .how-to-pay .method .payment-payco {
+	padding: 30px 10px 30px 10px;
+	background: #f9f9f9;
+	vertical-align: middle;
+}
+
+.order-page .how-to-pay .method .payment-payco .title {
+	padding: 0 0 0 15px;
+}
+
+.order-page .how-to-pay .method .payment-payco .selection {
+	padding: 0 0 0 15px;
+}
+
+.order-page .how-to-pay .method .payment-payco .selection div {
+	display: inline-block;
+	margin: 10px 0 0 0;
+}
+
+.order-page .how-to-pay .method .payment-payco .selection .icon-element
+	{
+	width: 100px;
+	text-align: center;
+	padding: 0 20px 0 0;
+}
+
+.order-page .how-to-pay .method .payment-payco .selection input {
+	display: none;
+}
+
+.order-page .how-to-pay .method .receipt .selection .form-element label,
+	.order-page .how-to-pay .method .payment .form-element label {
+	background-color: #f9f9f9;
+}
+
+.order-page .how-to-pay .method .process {
+	padding: 12px 0;
+	border-top: 1px solid #dbdbdb;
+}
+
+.order-page .how-to-pay .method .process .title-element {
+	display: inline-block;
+	width: 130px;
+	padding: 7px 0 0 24px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1c1b1b;
+}
+
+.order-page .how-to-pay .method .process .selection {
+	display: inline-block;
+	font-size: 12px;
+	color: #302f2f;
+}
+
+.order-page .how-to-pay .method .process .selection img {
+	vertical-align: middle;
+}
+
+.order-page .how-to-pay .method .process p {
+	padding: 7px 0 0 24px;
+	color: #979797;
+}
+
+.order-page .how-to-pay .method .bank, .order-page .how-to-pay .method .overseas-pg
+	{
+	margin: 10px 0 0 0;
+	padding: 3px 0 0 0;
+	background: url('../img/etc/dot-1x3-c0.png') repeat-x left top;
+}
+
+.order-page .how-to-pay .method .bank li {
+	display: table;
+}
+
+.order-page .how-to-pay .method .bank li>strong, .order-page .how-to-pay .method .bank li>div
+	{
+	display: table-cell;
+	height: 44px;
+	padding: 0 0 0 24px;
+	vertical-align: middle;
+}
+
+.order-page .how-to-pay .method .bank li>div {
+	display: table-cell;
+	height: 44px;
+	vertical-align: middle;
+}
+
+.order-page .how-to-pay .method .receipt {
+	border-top: 1px solid #dbdbdb;
+}
+
+.order-page .how-to-pay .method .receipt .selection {
+	padding: 15px 0;
+	background: #f9f9f9;
+}
+
+.order-page .how-to-pay .method .receipt .selection>strong {
+	margin: 0 0 0 24px;
+}
+
+.order-page .how-to-pay .method .receipt .selection .form-element {
+	
+}
+
+.order-page .how-to-pay .method .receipt .wu {
+	border-top: 1px solid #dbdbdb;
+}
+
+.order-page .how-to-pay .method .receipt .wu .use {
+	padding: 19px 0;
+}
+
+.order-page .how-to-pay .method .receipt .wu .user-info {
+	overflow: hidden;
+	padding: 20px 0;
+	background: url('../img/etc/dot-1x3-c0.png') repeat-x left top;
+}
+
+.order-page .how-to-pay .method .receipt .wu .user-info>strong,
+	.order-page .how-to-pay .method .receipt .wu .user-info>div {
+	display: table-cell;
+	padding: 0 0 0 24px;
+}
+
+.order-page .how-to-pay .method .receipt .wu table {
+	width: 100%;
+	margin: 12px 0;
+}
+
+.order-page .how-to-pay .method .receipt .wu table th {
+	padding: 0 0 0 21px;
+	text-align: left;
+}
+
+.order-page .how-to-pay .method .receipt .wu table td {
+	padding: 8px 0;
+}
+
+.order-page .how-to-pay .buy {
+	padding: 30px 0 0;
+}
+
+.order-page .how-to-pay .buy .final-settlement {
+	padding: 13px 46px 20px 0;
+	border: 2px solid #d6d6d6;
+	text-align: right;
+}
+
+.order-page .how-to-pay .buy .final-settlement em {
+	padding: 0 15px 0 0;
+	color: #393838;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.order-page .how-to-pay .buy .final-settlement span {
+	color: #3e3d3c;
+	font-size: 20px;
+}
+
+.order-page .how-to-pay .buy .final-settlement span strong {
+	position: relative;
+	top: 5px;
+	font-size: 30px;
+}
+
+.order-page .how-to-pay .buy .required-check {
+	padding: 33px 0 0;
+	text-align: center;
+}
+
+.order-page .how-to-pay .buy .required-check label em {
+	color: #444;
+}
+
+.order-page .how-to-pay .buy .required-check label strong {
+	color: #3e3d3c;
+}
+
+.order-page .how-to-pay .buy .required-check label.on em {
+	font-weight: bold;
+}
+
+.order-page .btn-justify .skinbtn {
+	font-weight: bold;
+}
+
+.order-page .how-to-pay .buy .btn {
+	padding: 13px 0 0;
+}
+
+.skinbtn.base3.pg-cartmove, .skinbtn.point1.pg-cancel, .skinbtn.default.cart-cartdelete,
+	.skinbtn.default.cart-carttowish, .skinbtn.default.cart-carttoestimate
+	{
+	width: 114px;
+	height: 30px;
+	line-height: 28px;
+}
+
+.skinbtn.point1.cart-orderselect, .skinbtn.point2.cart-orderall {
+	width: 203px;
+	height: 55px;
+	line-height: 53px;
+}
+
+.skinbtn.point2.order-buy {
+	width: 300px;
+	height: 61px;
+	line-height: 59px;
+	font-size: 20px;
+}
+
+.skinbtn.point2.oe-confirm {
+	width: 200px;
+	height: 60px;
+	line-height: 58px;
+	font-size: 14px;
+}
+
+.skinbtn.point2.pg-open {
+	width: 100px;
+	height: 42px;
+	line-height: 40px;
+}
+/*
+    주문끝
+*/
+.table-reset th, .table-reset td {
+	padding: 0;
+	background: transparent;
+}
+
+.table1>table {
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+
+.table1>table>thead>tr>th {
+	padding: 10px 0;
+	border-bottom: 1px solid #dbdbdb;
+	background: #f7f7f7;
+}
+
+.table1>table>tbody>tr>td {
+	border-bottom: 1px solid #dbdbdb;
+	color: #444;
+}
+
+.table1>table tbody td .chosen-container {
+	margin: 0;
+}
+
+.table1>table tbody td .completed {
+	display: inline-block;
+	min-height: 20px;
+	padding: 0 0 0 28px;
+	background: url('../img/icon/completed.png') no-repeat left 3px;
+	color: #3e3d3c;
+	font-size: 13px;
+}
+
+.table1>table>tbody>tr>th {
+	background: #f9f9f9;
+	border-bottom: 1px solid #dbdbdb;
+	padding: 10px 16px;
+	color: #777;
+}
+
+.table1>table>tbody>tr>th ~td {
+	padding: 10px;
+}
+
+.table1>table td.delivery-loc {
+	line-height: 20px;
+}
+
+.table1>table td.delivery-loc a {
+	color: #000;
+}
+
+.table1>table td.delivery-loc span {
+	color: #000;
+	font-size: 11px;
+}
+
+.table1>table td.delivery-name {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	color: #000;
+}
+
+.table1>table td.delivery-address {
+	color: #000;
+	line-height: 20px;
+}
+
+.table1>table td.delivery-address p {
+	/*padding-left:60px;*/
+	/*text-indent:-60px;*/
+	
+}
+
+.table1>table td.delivery-tel {
+	color: #000;
+	line-height: 18px;
+}
+
+.table1>table td.delivery-btn {
+	
+}
+
+.table1>table td.delivery-btn .normal-btn {
+	margin: 3px 0;
+}
+
+.table1>table .final {
+	font-size: 16px;
+}
+
+.table1>table .final strong {
+	font-size: 20px;
+}
+
+.table1>table td.payment-method {
+	line-height: 20px;
+}
+
+.table1>.board-list td {
+	height: 40px;
+}
+
+.table1>.board-list td.money {
+	padding-right: 35px;
+	text-align: right;
+}
+
+.table1>.board-list td.tit {
+	padding: 0 30px;
+}
+
+.table1>.board-list td.tit a {
+	color: #444;
+}
+
+.table1>.board-list td.tit a:hover {
+	text-decoration: underline;
+}
+
+.table1>.board-list td.tit img {
+	margin: 0 0 0 2px;
+	vertical-align: middle;
+}
+
+.table1>.board-list td.category {
+	color: #888;
+}
+
+.table1>.board-list td del {
+	color: #a9a9a9;
+}
+
+.table1.bd table {
+	border-top: 1px solid #dbdbdb;
+}
+
+.table1.type2 {
+	margin: -11px 0 0;
+}
+
+.table1.type2 td {
+	padding: 10px 0;
+}
+
+.table1.type2 td.tit a {
+	color: #444;
+}
+
+.table1.type2 td.tit a:hover {
+	text-decoration: underline;
+}
+
+.table1.type2 td.tit span.reply {
+	display: inline-block;
+}
+
+.table1.type2 td.tit span.reply a {
+	display: inline-block;
+	padding: 0 0 0 15px;
+	background: url('../img/icon/board-reply.png') no-repeat left 5px;
+}
+
+.table1.type2 .notice-item td img {
+	position: relative;
+	top: 2px;
+	vertical-align: top;
+}
+
+.table1.type2 .notice-item td a:hover {
+	text-decoration: underline;
+}
+
+.table1.type2 td img {
+	vertical-align: middle;
+}
+
+.table1.type2.dot-list tr td:first-child {
+	padding-left: 10px;
+}
+
+.table1.type2.dot-list tr td:first-child:after {
+	content: '';
+	width: 2px;
+	height: 2px;
+	display: block;
+	background: #b2b2b2;
+	float: left;
+	margin: 8px 10px 0 0;
+}
+
+.table1.type2.dot-list tr td a:hover {
+	text-decoration: underline;
+}
+
+.content input {
+outline:none;
+}
+
+input.text,
+input.password,
+input.edit {
+    padding:0 5px;
+    px; */
+    outline:none;
+    font-size:12px;
+}
+
+/*버튼*/
+
+.normal-btn.small2 {
+    height:28px;
+    background:url('../../img/etc/btn-small2-bg.png') repeat-x left top;
+    font-size:12px !important;
+    line-height:26px;
+}
+.normal-btn.small2:hover {
+    background:#f8f8f8;
+    border:1px solid #dbdbdb;
+}
+
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  zoom: 1;
+  *display: inline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.chosen-container * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  z-index: 1010;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #fff;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0;
+}
+.chosen-container a {
+  cursor: pointer;
+}
+.chosen-container .search-choice .group-name, .chosen-container .chosen-single .group-name {
+  margin-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #999999;
+}
+.chosen-container .search-choice .group-name:after, .chosen-container .chosen-single .group-name:after {
+  content: ":";
+  padding-left: 2px;
+  vertical-align: top;
+}
+
+/* @group Single Chosen */
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 27px;
+  margin: 0 !important;
+}
+.chosen-container-single .chosen-default {
+  color: #999;
+}
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 38px;
+}
+.chosen-container-single .chosen-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url('chosen-sprite.png') -42px 1px no-repeat;
+  font-size: 1px;
+}
+.chosen-container-single .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+.chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('chosen-sprite.png') no-repeat 0px 4px;
+}
+.chosen-container-single .chosen-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  width: 100%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #ccc;
+  background: white url('chosen-sprite.png') no-repeat 100% -20px;
+  background: url('chosen-sprite.png') no-repeat 100% -20px;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+.chosen-container-single .chosen-drop {
+  margin-top: -1px;
+  border-radius: 0;
+  background-clip: padding-box;
+  padding: 5px 0;
+}
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  left: -9999px;
+}
