@@ -32,10 +32,10 @@
 	
 	<div id="intro">
 		<ul id="first_ul">
-			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></li>
-			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg"></li>
-			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
-			<li class="first_li"><img src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
+			<li class="first_li" id="f1"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></li>
+			<li class="first_li" id="f2"><img id="f2" src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg"></li>
+			<li class="first_li" id="f3"><img id="f3" src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
+			<li class="first_li" id="f4"><img id="f4" src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
 		</ul>
 	</div>
 	<!-- 이동 -->

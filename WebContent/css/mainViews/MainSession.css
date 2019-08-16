@@ -39,13 +39,14 @@
 /* 메뉴 상태 */
 .item-display-wrap{
 	position: relative;
+	width: 1200px;
+    margin: 0 auto;
 }
 
 .mtitbox {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    background-color: #fff;
     border: 0px solid #EFEFEF;
     margin-top: 30px;
     margin-bottom: 60px;

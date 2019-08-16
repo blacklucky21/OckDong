@@ -13,4 +13,21 @@ function bestPrice(cate,p_type,t){
 
 }
 
-
+$(function(){
+$('.first_li').on("click",function(){
+	
+	var liid = $(this).attr('id');
+	console.log(liid);
+		if(liid == "f1"){
+			alert("사진 1");
+			
+		}else if(liid == 'f2'){
+			alert("사진2");
+		}else if(liid == 'f3'){
+			alert("사진3");
+		}else if(liid == 'f4'){
+			alert("사진4");
+		}
+	
+	});
+});

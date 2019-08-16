@@ -165,8 +165,6 @@ ul, ol, li {
     list-style: none;
 }
 
-
-
 #top.header .top-service {
     height: 0px;
 }
@@ -175,6 +173,7 @@ ul, ol, li {
     bottom: 20px;
     position: fixed;
     right: 50px;
+    z-index: 5;
 }
 #top.header .logoBox h1 {
     text-align: center;
