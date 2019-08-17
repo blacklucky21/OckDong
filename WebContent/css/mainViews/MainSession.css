@@ -15,7 +15,7 @@
     margin-bottom: 100px;
     width: 1200px;
     height: 300px;
-    margin: 0 auto;
+    margin: 0 auto 5%;
 }
 
 #wizmainbox #box_left {
@@ -33,14 +33,27 @@
     margin-left: 38px;
 }
 
-.vui-slider, .first_li, .manue_second , .sort dd{
+.vui-slider, .first_li, .manue_second , .sort dd, .detail_list, .img, .info > .name > span{
 	cursor:pointer;
+}
+
+.prd_basic > li {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+.btn_more {	
+	float: right;
+    padding: 0 34px 0 0;
+    font-size:20px;
 }
 /* 메뉴 상태 */
 .item-display-wrap{
 	position: relative;
 	width: 1200px;
-    margin: 0 auto;
+    margin: 7% auto;
 }
 
 .mtitbox {
@@ -71,10 +84,8 @@
 	position: relative;
     width: 1200px;
     margin: 4% auto;
-    padding-bottom: 80px;
     background: #fff;
-   /*  border: 1px solid #f0f0f0; */
-    border: 3px solid black;
+	border: 5px ridge #E1E1E1;
 }
 
 .cate_box .top_title {
@@ -96,8 +107,14 @@
     color: #666;
 }
 
+.products_list{
+	    box-sizing: border-box;
+    overflow-y: overlay;
+}
+
 .sort dt {
     float: left;
+    margin: 0 2.4%;
     padding: 2px 18px 0 0;
     font-size: 18px;
     color: #333333;
@@ -110,6 +127,7 @@
     border: 1px solid #000000;
     border-radius: 3px;
     text-align: center;
+    
 }
 .sort dd:hover{
     background: #444444;
@@ -124,13 +142,14 @@
 }
 
 .prd_basic {
-    width: 720px;
+    float: left;
+    margin-left: 7%;
+    width: 100%;
 }
-
 .prd_basic li {
     padding: 0 30px 40px 0;
 }
-.price_best .prd_basic li .box {
+.price_best > .prd_basic > li > .box{
     position: relative;
     overflow: hidden;
     width: 210px;
@@ -141,10 +160,46 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    text-align: center;
+    margin: 10% 0%;
 }
 
+.prd_basic li .box .info .name {
+    overflow: hidden;
+    max-height: 41px;
+}
 .prd_basic .box .img img{
     width: 210px;
     height: 210px;
 }
+
+.prd_basic .box .info .price{
+	margin-bottom:2%;
+}
+
+.prd_basic .box .info .price .consumer{
+	float:right;
+}
+
+.prd_basic .box .preview {
+    padding-bottom: 5px;
+    padding: 10% 0 0;
+}
+
+.prd_basic .box .preview span {
+    padding:0 2px;
+    font-size: 12px;
+    color: #505050;
+}
+
+.prd_basic .box .preview .sid{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+

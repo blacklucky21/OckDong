@@ -9,7 +9,7 @@ $(function(){
 		console.log(liid);
 		if(liid == "f1"){
 			alert("사진 1");
-			
+			// 이제 여기서 메소드 실행 시키고 그 메소드 작성 하게 하면 됨
 		}else if(liid == 'f2'){
 			alert("사진2");
 		}else if(liid == 'f3'){
@@ -24,6 +24,23 @@ $(function(){
 		
 	});
 });
+
+$(function(){
+	$('.detail_list').on("click",function(){
+		var listid = $(this).attr('id'); // 메뉴의 더보기 어떤게 클릭확인
+		console.log(listid);
+		
+		if(listid == 'list1'){
+			alert("리스트 더보기1 눌림");
+		}else if(listid == 'list2'){
+			alert("샐러드 리스트 더보기클릭");
+		}else if(listid == 'list3'){
+			alert("이달의 도시락 더보기 클릭");
+		}
+		
+	});	
+});
+
 
 
 // 버튼이 눌렷을 경우
