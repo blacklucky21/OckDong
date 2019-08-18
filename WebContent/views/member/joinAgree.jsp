@@ -23,7 +23,6 @@
 	.loginForm {
 		text-align:center;
 	}
-	
 	#logo {
 		margin-bottom:50px;
 	}

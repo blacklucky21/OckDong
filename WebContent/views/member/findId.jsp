@@ -44,7 +44,8 @@
 		</tr>
 	</table>
 	</form>
-	</div>s
+	</div>
+	
 	<br><br><br><br>
 	<script>
 		$(function(){

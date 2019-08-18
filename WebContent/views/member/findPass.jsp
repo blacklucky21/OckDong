@@ -13,6 +13,7 @@
 </head>
 <body>
 	<br><br><br>
+	
 	<div class="loginForm">
 	<a href="<%=request.getContextPath()%>/index.jsp"><img class="image" src="<%=request.getContextPath()%>/img/mainlogo.png" id="logo" align="center"></a>
 	<form id="passFindForm" action="<%=request.getContextPath()%>/passFind.me" method="post">
