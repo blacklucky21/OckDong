@@ -109,12 +109,13 @@
   
   <!-- ############### 글쓰기 버튼 ###############  --> 
   <div class="container" id="btnwrite">
-  <button class="btn btn-danger" id="btnwrite1" onclick="location.href='<%= request.getContextPath() %>/views/boast/boastInsertForm'">글쓰기</button>
+  <button class="btn btn-danger" id="btnwrite1" onclick="location.href='<%= request.getContextPath() %>/views/boast/boastInsertForm.jsp'">글쓰기</button>
   </div>
-  
-  
   </div>
 </div>
+
+<!-- ##################### 풋터 부분 ##################### -->
+<jsp:include page='/views/footer/footer.jsp'/>
 
 </body>
 </html>

@@ -54,7 +54,7 @@
   height: 100%;
   /* background: lightblue; */
   background: #89D179; 
-  z-index:20;
+  z-index: 5; 
   -webkit-transition:all .5s ease;
   transition: all .5s ease;
   bottom:0;
