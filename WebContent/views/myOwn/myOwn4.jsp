@@ -31,15 +31,17 @@
     
 }
 
-.side_menu .side_tedo{
+.side_tedo{
     margin-bottom: .5rem;
     margin: 0 auto;
     padding: 10px;
+    overflow: auto;
 }
 
 .side_menu .span_menu{
 	 padding: 0 2%;
 }
+
 
 .content{
 	color:#eee;
