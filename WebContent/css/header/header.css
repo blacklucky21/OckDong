@@ -165,8 +165,6 @@ ul, ol, li {
     list-style: none;
 }
 
-
-
 #top.header .top-service {
     height: 0px;
 }
@@ -175,6 +173,7 @@ ul, ol, li {
     bottom: 20px;
     position: fixed;
     right: 50px;
+    z-index: 5;
 }
 #top.header .logoBox h1 {
     text-align: center;
@@ -232,7 +231,8 @@ ul, ol, li {
 /*
 	상단메뉴자동리스트코드
 */
-.topMenu.fixed {position:fixed; margin:0 auto; top:31px; width:100%; z-index:5;} /* 메뉴고정 */
+.topMenu.fixed {position:fixed; margin:0 auto; top:31px; width:100%; z-index:10;} /* 메뉴고정  */
+
 .topMenu {clear:both;width:100%;height:50px;border-top:1px solid #999999;border-bottom:1px solid #ddd;background:#fff;z-index:999;} 
 
 #topside {   margin:0 auto;  z-index:999;  width:1250px; border:0px solid #000; }

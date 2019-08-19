@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@CHARSET "UTF-8";
+/* Candle_Project */
+
+
+a{ text-decoration: none;
+
+ }
+ a:VISITED , a:LINK{
+ 	color:black;
+ }
+ a:HOVER{
+ 	color:red;
+ }
+/* Header 시작 */
+header{
+	width: 100%;
+	height: 240px;	 /* 원래 67px */
+	position: fixed;
+	top:0px;
+	overflow: hidden;	
+	/* background-color: black;  */ 	
+	background-color: white;
+	/* background-color: black; */
+}	
+header > div{
+	width:60%;
+	height:150px;
+	margin: 0 auto;
+	margin-top:20px;
+	text-align:center;
+	/* background-color: yellow; */
+}
+header > div > a >img{
+	width: 170px;
+	height: 150px;	
+	margin: 0 auto;		
+}
+header > nav{
+	width:60%;
+	height:200px;
+	margin:0 auto;
+	/* background-color:green; */
+	margin-top: 20px;
+	color:black;
+	overflow: hidden;		
+}
+header > nav > #u1 > li{		
+	text-align:center;
+	width:12.5%; /* 글자간 간격  33.33*/
+	height:45px; /* li높이 */
+	background-color: white;
+	border-bottom:2px solid black;
+	float:left;
+	font-weight:bold;
+	line-height: 45px; /* 높이와같이해야 중앙정렬 */
+}
+#h1{
+	width: 25%;
+	height: 45px;
+	/* background-color: gray; */
+	background-color:white;
+	border-bottom:2px solid black;
+	float:left;
+}
+#h1 > #u2 > li{
+	text-align:center;
+	margin-left:22px; /* 오른쪽으로 조금 이동 */
+	width:33%;	/* 글자간 간격  30*/
+	height: 45px; /* 메뉴리스트와 동일 */
+	float: left;
+	font-weight:bold;
+	line-height: 45px; /* 높이와같이해야 중앙정렬 */
+	font-size: 13px;
+}
+/* Header 끝 */
+
+
+/* Section 시작 */
+#s_1{
+	width: 40%;
+	height: 840px;	
+	margin: 0 auto;	
+	margin-top: 100px;
+	
+}
+
+#hr1{
+	border: 1px solid #a3c2c2; 
+	border-bottom: thin;
+	border-left:thin;
+	border-right:thin;	
+}
+#s_1 > div{
+		width:100%;
+		margin: 0 auto;
+		/* background-color: yellow; */		
+}
+#s_1 > div > img{
+	text-align: center;
+	width: 100%;
+	height: 100px; 
+}
+#t_1{
+	margin: 0 auto;
+	width: 100%;	
+}
+
+.d1{
+	margin: 0 auto;
+	width: 80%;
+	height: 30px;	
+	 border: 0.2px solid #a3c2c2; 
+	font-weight: bold;
+	padding: 7px;
+	font-size: 15px;
+}
+
+#d1_1{
+	margin: 0 auto;
+	width: 20%;
+}
+#d1_1 > input{
+	margin-left: 42%;
+	width: 20px;
+	height: 20px;
+}
+ .tx_1{
+	margin: 0 auto;
+	width: 99.25%;
+	height: 80px;
+	/* border: 1px solid black;  */
+} 
+#bot_t{	
+	width:100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+#bot1{
+	/* border: 1px solid black; */
+	width: 50%;
+	height:80px;
+	text-align: center;	
+	color:blue;
+	font-weight: bold;
+	border-bottom: 0.5px solid #a3c2c2;
+	border-top: 0.5px solid #a3c2c2;
+	border-left: 0.5px solid #a3c2c2;	
+	background: #000;
+    border: 1px solid #3e3d3c;
+    color: #fff;
+    font-weight: bold;
+}
+#bot1 > a > div{
+	width:100%;
+	height: 80px;
+	/* background-color: yellow; */
+	line-height: 80px;
+	font-size: 18px;	
+}
+
+#bot1 > a:HOVER{
+	color:white;
+}
+#bot2 > a:HOVER{
+	color:black;
+}
+
+#bot2{
+	border: 0.5px solid #a3c2c2; 
+	width: 50%;
+	height:80px;
+	text-align: center;		
+	font-weight: bold;	
+	font-size: 18px;
+}
+#bot2 > a > div{
+	width:100%;
+	height: 80px;
+	/* background-color: yellow; */
+	line-height: 80px;
+	font-size: 18px;	
+}
+
+/* Footer 시작  */
+footer{
+	margin-top: 40px;	
+	width: 100%;
+	height: 130px;	
+	overflow: hidden; 
+	}
+	
+footer > div{
+	width: 60%;
+	height: 110px;
+	margin: 0 auto;
+	margin-top: 20px;
+		
+}
+
+#f1{
+	width: 110px;
+	height: 100%;	
+	float: left;
+	}
+#f1 > img{
+	width: 130px;
+	height: 90px;
+	
+}
+#f2{
+	width: 60%;
+	height: 100%;	
+	margin-left: 90px;	
+	float:left;
+	font-size: 12px;
+	/*  background-color: green;  */
+		
+	}	
+#f2 > p {
+		font-weight:bold;
+		text-align:center;
+		/* background-color:green; */
+		margin-bottom: 3px;
+		/* color:#cccccc; */
+		color:black;
+	}
+#f2 span{
+		font-size:9px;
+	}
+	 
+#f3{
+	margin: 0 auto;
+	width: 10%;
+	height: 100%;
+	float: right;	
+	/* background-color: yellow;  */
+	}
+	
+#f3 > img{
+	width: 100px;
+	height: 100px;	
+}
+
+#f3 > select {
+	width: 100%;
+	background-color: #4d4d4d;
+	color:#cccccc;
+	}
+li:HOVER {
+	color: red;
+}	
+/* Footer 끝 */
+
+
+
+
+
+
+
+
+
+

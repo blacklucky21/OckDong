@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.image {
+	width: 600px;
+	height: auto;
+}
+
+.loginForm {
+	text-align: center;
+}
+
+#logo {
+	margin-bottom: 50px;
+}
+
+
+a {
+	color: darkgray;
+}
+
+a:hover {
+	color: black;
+}
+
+#idCheck, #nickCheck, #emailCheck, #ckZip, #goMain, #joinBtn {
+	background: black;
+	border-radius: 5px;
+	width: 80px;
+	height: 25px;
+	text-align: center;
+	color: white;
+}
+
+#idCheck:hover, #nickCheck, #emailCheck:hover, #ckZip:hover, #goMain:hover,
+	#joinBtn {
+	cursor: pointer;
+}
+
+td {
+	text-align: center;
+}
+
+#ckZip, #joinBtn {
+	background: black;
+}
+
+#joinBtn, #goMain {
+	display: inline-block;
+}
+
+.inner {
+	width: 600px;
+	margin: 0 auto;
+	font-size: 37px;
+}
+
+.form-control2 {
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}

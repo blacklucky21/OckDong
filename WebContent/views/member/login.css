@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.image {
+	width: 600px;
+	height: auto;
+}
+
+#naverlogin {
+	border-radius: 0px;
+	background: #009900;
+	color: white;
+	width: 185px;
+	height: 30px;
+	margin: 12px;
+}
+
+#userId {
+	width: 180px;
+	height: 30px;
+	font-size: 15px;
+	margin: 12px;
+}
+#userPwd {
+	width: 180px;
+	height: 30px;
+	font-size: 15px;
+	margin: 12px;
+}
+
+#checkBtn {
+	width: 15px;
+	height: 15px;
+}
+
+.log_tb .find {
+	width: 65px;
+	height: 10px;
+}
+
+.loginForm {
+	text-align: center;
+}
+
+#loginBtn {
+	background-color: black;
+	color: black;
+	border-radius: 5px;
+}
+
+.find {
+	margin: 5px;
+	padding: 5px;
+}
+
+#logo {
+	margin-bottom: 50px;
+}
+
+a {
+	color: darkgray;
+}
+
+a:hover {
+	color: black;
+}
