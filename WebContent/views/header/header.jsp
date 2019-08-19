@@ -126,7 +126,7 @@
 
 <div class="logoBox">
     <div class="logo">
-        <h1><a href="#" ><img src="${ pageContext.request.contextPath }/img/mainlogo.png"  alt="상단 로고" title="상단 로고" /></a></h1>
+        <h1><a href="#"><img src="${ pageContext.request.contextPath }/img/mainlogo.png"  alt="상단 로고" title="상단 로고" /></a></h1>
         <!-- 검색 폼 -->
         <div class="search">
     <form name="frmSearchTop" id="frmSearchTop" action="../goods/goods_search.php" method="get">

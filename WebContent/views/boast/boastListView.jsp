@@ -21,7 +21,7 @@
   <table>
   <tr>
   <td>
-    <div class="gallery-item">
+    <div class="gallery-item" onclick="location.href='<%= request.getContextPath() %>/views/boast/boastDetailView.jsp'">
       <div class="gallery-item-image">
         <img src="http://tong.joins.com/wp-content/uploads/sites/3/2017/05/2017-05-25-11.01.25-1_resized_.jpg" style="width:300px; height:300px;"></div>
       <div class="gallery-item-description">
@@ -102,7 +102,7 @@
    <div class="pagination p7">
       <ul>
         <a class="is-active" href="#" style="text-decoration:none"><li>Previous</li></a>
-        <a href="#" style="text-decoration:none"><li>Next</li></a>
+        <a href="#" style="text-decoration:none; color: #2ecc71;"><li>Next</li></a>
       </ul>
     </div>
   </div>
