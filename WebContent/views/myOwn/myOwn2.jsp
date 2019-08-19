@@ -81,14 +81,10 @@ a {color:#fff;}
 			<div
 				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
 				<div style="width: 100%; height: 20%;">
-					<span style="width: 100%; height: 100%;"> <img
-						style="margin-right: 14.5%;" /> <img class="lunch_size"
-						src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG"
-						style="width: 20%; margin-right: 5%;" /> <img class="lunch_size"
-						src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG"
-						style="width: 20%; margin-right: 5%;" /> <img class="lunch_size"
-						src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG"
-						style="width: 20%;" />
+					<span style="width: 100%; height: 100%;">
+						<img style="margin-right: 14.5%;" /> <img class="lunch_size" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" style="width: 20%; margin-right: 5%;"/>
+						<img class="lunch_size" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" style="width: 20%; margin-right: 5%;"/>
+						<img class="lunch_size" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" style="width: 20%;"/>
 					</span>
 				</div>
 				<div
@@ -101,10 +97,11 @@ a {color:#fff;}
 			<div class="acodian_menu_list"
 				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
 				<ul>
-					<li class="acodian_menu_li">밥류<span class="acodian_menu_span"><img
-							class="img_btn"
-							src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" /></span>
-						<div class="content acodian_click_div">
+					<li class="acodian_menu_li" style="box-sizing: border-box;">
+						밥류<span class="acodian_menu_span">
+							<img class="img_btn" src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" />
+						</span>
+						<div class="content acodian_click_div" style="box-sizing: border-box;">
 							<div id="galleria">
 								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/01.jpg">
 								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/02.jpg">
@@ -125,9 +122,10 @@ a {color:#fff;}
 							</div>
 						</div>
 					</li>
-					<li class="acodian_menu_li">반찬류1<span
-						class="acodian_menu_span"><img class="img_btn"
-							src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" /></span>
+					<li class="acodian_menu_li">
+						반찬류1<span class="acodian_menu_span">
+							<img class="img_btn" src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" />
+						</span>
 						<div class="content acodian_click_div">
 							<div id="galleria">
 								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/01.jpg">
@@ -152,6 +150,26 @@ a {color:#fff;}
 					<li class="acodian_menu_li">반찬류2<span
 						class="acodian_menu_span"><img class="img_btn"
 							src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" /></span>
+						<div class="content acodian_click_div">
+							<div id="galleria">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/01.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/02.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/03.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/04.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/05.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/06.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/07.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/08.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/09.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/10.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/11.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/12.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/13.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/14.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/15.jpg">
+								<img alt="이미지 정보" src="http://www.blueb.co.kr/SRC1/image/16.jpg">
+							</div>
+						</div>
 					</li>
 					<li class="acodian_menu_li">반찬류3<span
 						class="acodian_menu_span"><img class="img_btn"
@@ -196,16 +214,20 @@ a {color:#fff;}
 			var src = $(this).attr('src');
 			$('.lunch_size_choice').attr('src', src);
 		});
+		$(function(){
 			$(".acodian_click_div").hide();
 			$(".acodian_click_div").css('display','none');
 			// $("ul > li:first-child a").next().show();
+			
 			$(".acodian_menu_span").click(function() {
-				$(this).next().slideToggle();
+				$(this).next().slideToggle(400);
 				// $(this).next().slideDown(300);
-				$(".acodian_menu_span").not(this).next().slideUp();
+				$(".acodian_menu_span").not(this).next().slideUp(400);
 				return false;
 			});
 			$(".acodian_menu_span").eq(0).trigger("click");
+		});
+		
 	</script>
 </body>
 </html>
