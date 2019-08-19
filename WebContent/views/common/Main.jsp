@@ -101,7 +101,7 @@
 					</div>
 				</div>
 			</li>
-		<li>
+		
 			<li>
 				<div class="box">
 					<div class="img">

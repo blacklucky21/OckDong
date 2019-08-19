@@ -43,7 +43,7 @@
 
 #loginBtn {
 	background-color: black;
-	color: black;
+	color: white;
 	border-radius: 5px;
 }
 
@@ -61,5 +61,5 @@ a {
 }
 
 a:hover {
-	color: black;
+	color: white;
 }
