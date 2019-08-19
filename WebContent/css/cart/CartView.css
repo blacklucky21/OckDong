@@ -1335,3 +1335,8 @@ input.edit {
   position: absolute;
   left: -9999px;
 }
+
+
+dl{
+	text-align:left;
+}
