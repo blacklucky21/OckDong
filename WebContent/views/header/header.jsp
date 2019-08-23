@@ -126,10 +126,10 @@
 
 <div class="logoBox">
     <div class="logo">
-        <h1><a href="#"><img src="${ pageContext.request.contextPath }/img/mainlogo.png"  alt="상단 로고" title="상단 로고" /></a></h1>
+        <h1><a href="<%= request.getContextPath()%>/index.jsp"><img src="${ pageContext.request.contextPath }/img/mainlogo.png"  alt="상단 로고" title="상단 로고" /></a></h1>
         <!-- 검색 폼 -->
         <div class="search">
-    <form name="frmSearchTop" id="frmSearchTop" action="../goods/goods_search.php" method="get">
+    <form name="frmSearchTop" id="frmSearchTop" action="" method="get">
         <fieldset>
             <legend>검색폼</legend>
             <div>
@@ -177,10 +177,10 @@
         <a href="">정기배송</a>
         <ul class="sub_menu">
             <li  >
-                <a href="">TEE</a>
+                <a href="">정기</a>
             </li>
             <li  >
-                <a href="">TOP</a>
+                <a href="">배송</a>
             </li>
         </ul>
     </li>

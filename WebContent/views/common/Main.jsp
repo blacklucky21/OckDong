@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/mainViews/MainSession.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- css 끝 -->
+
 <!-- js 시작 -->
 <script type="text/javascript" src="${ pageContext.request.contextPath }/js/main/main.js"></script>
 <!-- js 끝 -->
@@ -29,16 +30,32 @@
 		</div>
 	</div>
 	
-	<!-- 회사 소개 -->
+	
+	<!-- 회사 소개 4가지 -->
 	<div id="intro">
 		<ul id="first_ul">
-			<li class="first_li" id="f1"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></li>
+			<li class="first_li" id="f1"><a href="#none" id="four" class="button"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></a></li>
 			<li class="first_li" id="f2"><img id="f2" src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg"></li>
 			<li class="first_li" id="f3"><img id="f3" src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
 			<li class="first_li" id="f4"><img id="f4" src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
 		</ul>
 	</div>
-	<!-- 회사 소개 이미지 -->
+	<!-- 회사 소개 끝 -->
+	
+		
+<!-- Modal -->
+
+
+<div id="modal-container">
+	<div class="modal-background">
+		<div class="modal">
+			<h2>I'm a Modal</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, similique!</p>
+		</div>
+	</div>
+</div>
+<!-- Modal 끝 -->
+	
 	
 	
 	<!-- 이동 -->

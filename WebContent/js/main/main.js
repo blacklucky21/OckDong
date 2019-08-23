@@ -2,13 +2,12 @@
 // 슬라이드 쇼 밑에 이미지 눌렸을 경우
 
 
-$(function(){
+/*$(function(){
 	$('.first_li').on("click",function(){
 		
 		var liid = $(this).attr('id'); // 어떤 이미지 클릭 됐는지 구분한다
 		console.log(liid);
 		if(liid == "f1"){
-			alert("사진 1");
 			// 이제 여기서 메소드 실행 시키고 그 메소드 작성 하게 하면 됨
 		}else if(liid == 'f2'){
 			alert("사진2");
@@ -23,7 +22,7 @@ $(function(){
 		}
 		
 	});
-});
+});*/
 
 $(function(){
 	$('.detail_list').on("click",function(){
