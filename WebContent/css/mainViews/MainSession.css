@@ -33,9 +33,24 @@
     margin-left: 38px;
 }
 
+/* 호버시 마우스 포인 효과 */
 .vui-slider, .first_li, .manue_second , .sort dd, .detail_list, .img, .info > .name > span{
 	cursor:pointer;
+	
 }
+/* 호버시 쉐도우 효과  */
+.products_list > .btn_more > span:hover, .info > .name > span:hover{
+   color: white; 
+   
+   text-shadow: 1px 1px #000, 
+                2px 2px #000, 
+                3px 3px #000;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition:    all 0.2s ease-out;
+   -ms-transition:     all 0.2s ease-out;
+   -o-transition:      all 0.2s ease-out;
+}
+
 
 .prd_basic > li {
     display: inline-block;
@@ -196,8 +211,6 @@
     border-right: 1px solid #ccc;
 }
 
-
-/* 모달 효과 */
 
 
 

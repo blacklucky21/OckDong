@@ -92,7 +92,6 @@ function scrolldown(){
 
 /*상단고정메뉴*/
 
-
 jQuery(window).scroll(function(){
 	var hTop = jQuery('.topMenu').height();
 	var wScroll = jQuery(this).scrollTop();
@@ -110,6 +109,5 @@ jQuery(window).scroll(function(){
 
 	};
 });
-
 
 

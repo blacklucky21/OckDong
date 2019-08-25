@@ -153,9 +153,7 @@
     <!-- 사이드 카테고리 시작 -->
     <h2 class="dn">사이드 카테고리</h2>
     <ul class="category type-layer">
-    <li>
-        <a href="">신제품</a>
-    </li>
+    
     <li>
         <a href="">이달의 도시락</a>
     </li>

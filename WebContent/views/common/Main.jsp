@@ -36,32 +36,131 @@
 	<!-- 회사 소개 4가지 -->
 	<div id="intro">
 		<ul id="first_ul">
-			<li class="first_li" id="f1"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"  data-toggle="modal" data-target="#myModal"></li>
-			<li class="first_li" id="f2"><img id="f2" src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg"></li>
-			<li class="first_li" id="f3"><img id="f3" src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
-			<li class="first_li" id="f4"><img id="f4" src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
+			<li class="first_li" id="f1" data-toggle="modal" data-target="#myModal"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></li>
+			<li class="first_li" id="f2" data-toggle="modal" data-target="#myModal2"><img id="f2" src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg" ></li>
+			<li class="first_li" id="f3" data-toggle="modal" data-target="#myModal3"><img id="f3" src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
+			<li class="first_li" id="f4" data-toggle="modal" data-target="#myModal4"><img id="f4" src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
 		</ul>
 	</div>
 	<!-- 회사 소개 끝 -->
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal 끝 -->
+<div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="myModalLabel">옥동 도시락</h1>
+				</div>
+				<p style="text-align: center; " align="center"><span style="font-size: 36pt;">﻿<b><span style="color: rgb(0, 158, 37);">옥동 도시락</span><span style="color: rgb(0, 158, 37);">﻿</span></b></span><br></p>
+				<img src="${ pageContext.request.contextPath }/img/mainViews/mainInfo.png" style="width: 100%; height: auto;">
+				<img src="${ pageContext.request.contextPath }/img/mainViews/mianCompany .jpg">
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+<!-- 희망 배송 -->
+	<div class="modal fade bd-example-modal-xl" id="myModal2" tabindex="-1"
+		role="dialog" aria-labelledby="myExtraLargeModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-xl ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="myModalLabel">희망배송</h1>
+				</div>
+				<br>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 36pt; color: rgb(0, 158, 37);">﻿<b>​옥동도시락
+							희망배송</b></span><br> <br>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 24pt;"><b>아직도 기다리세요? 내가 원하는 날
+							배송받을 수 있어요!!</b></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 14pt;"><b><br></b></span>
+				</p>
+				<p style="text-align: center; margin-left: 0px;" align="center">
+					<span style="font-size: 14pt;"><b><span
+							style="font-size: 24pt;">01 옥동 도시락 </span><span
+							style="color: rgb(0, 158, 37); font-size: 24pt;">희망배송</span> <span
+							style="font-size: 24pt;"> 이란?</span></b></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 14pt;"><b><br></b></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 18.6667px;"><b><span
+							style="font-size: 24pt;">오직 옥동 도시락몰에만 있는 '지정일 예약 배송' </span><span
+							style="color: rgb(255, 0, 0); font-size: 24pt;"><span
+								style="color: rgb(0, 158, 37); font-size: 24pt;">서비스</span>&nbsp;<span
+								style="color: rgb(0, 0, 0); font-size: 24pt;">﻿로</span></span></b></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 18.6667px;"><b><span
+							style="color: rgb(255, 0, 0);"><span
+								style="color: rgb(0, 0, 0); font-size: 24pt;">옥동 도시락몰
+									전상품을 희망배송으로 주문 할 수 있습니다.</span></span></b></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 18.6667px;"><span
+						style="color: rgb(255, 0, 0);"><span
+							style="color: rgb(0, 0, 0); font-size: 9pt;">(회원 전용 서비스
+								입니다.)</span></span></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 18.6667px;"><span
+						style="color: rgb(255, 0, 0);"><span
+							style="color: rgb(0, 0, 0); font-size: 9pt;">​<span
+								style="font-size: 12pt;">﻿</span><br></span></span></span>
+				</p>
+				<p style="text-align: center;" align="center">
+					<span style="font-size: 18pt;">﻿01. 장바구니 담기 전 <span
+						style="color: rgb(0, 158, 37); font-size: 18pt;"><b>희망배송</b></span>
+						선택!!&nbsp; &nbsp;
+					</span><span style="font-size: 18pt;">02.상품을 </span><span
+						style="font-size: 18pt; color: rgb(0, 158, 37);"><b>수령하실
+							날</b></span><span style="font-size: 18pt;">을 선택하면 끝!!</span>
+				</p>
+				<img src="${ pageContext.request.contextPath }/img/mainViews/Desired delivery guide.jpg" style="width: 100%; height: auto;">
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="modal fade bd-example-modal-xl" id="myModal3" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="myModalLabel">나만의 도시락</h1>
+				</div>
+			
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="modal fade bd-example-modal-xl" id="myModal4" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="myModalLabel">이달의 도시락</h1>
+				</div>
+			
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal 끝 -->
 
 
 	<!-- 이동 -->
@@ -104,6 +203,7 @@
 		</p>
 		<ul class="prd_basic">
 		<!-- 일단 임시로 6개 DB 넣으면 채울거 -->
+			<% for(int i =0; i < 8; i++){ %>
 			<li>
 				<div class="box">
 					<div class="img">
@@ -124,148 +224,8 @@
 					</div>
 				</div>
 			</li>
-		
-			<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-					
+		<% } %>
+			
 		</ul>
 	</div>
 	
@@ -278,7 +238,7 @@
 	<div class="item-display-wrap">
 	<div class="mtitbox">
 		<div class="mtitle">
-			<span class="mname">saelleodeu</span>
+			<span class="mname">salad</span>
 		</div>
 	</div>
 	<div class="cate_box cate_box1">
@@ -300,8 +260,8 @@
 			<span class="detail_list"id="list2">더보기</span>
 		</p>
 		<ul class="prd_basic">
-		<!-- 일단 임시로 6개 DB 넣으면 채울거 -->
-				<li>
+				<% for(int i =0; i < 8; i++){ %>
+			<li>
 				<div class="box">
 					<div class="img">
 						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
@@ -321,146 +281,7 @@
 					</div>
 				</div>
 			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="price">
-						<span class="consumer">30000 원</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-							<span class="sid">상품후기 100</span>
-							<span>상품문의 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
+		<% } %>
 			
 		</ul>
 	</div>
@@ -497,7 +318,8 @@
 		</p>
 		<ul class="prd_basic">
 		<!-- 일단 임시로 6개 DB 넣으면 채울거 -->
-				<li>
+			<% for(int i = 0; i < 3; i++){ %>
+			<li>
 				<div class="box">
 					<div class="img">
 						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
@@ -512,112 +334,7 @@
 					</div>
 				</div>
 			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-				<li>
-				<div class="box">
-					<div class="img">
-						<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg">
-					</div>
-					<div class="info">
-						<p class="name">
-							<span>제품이름 가지고 오기</span>
-						</p>
-						<p class="preview">
-							<span>좋아요 100</span>
-						</p>
-					</div>
-				</div>
-			</li>
-			
+			<% } %>
 		</ul>
 	</div>
 	
