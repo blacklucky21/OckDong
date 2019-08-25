@@ -24,6 +24,7 @@
 	});
 });*/
 
+
 $(function(){
 	$('.detail_list').on("click",function(){
 		var listid = $(this).attr('id'); // 메뉴의 더보기 어떤게 클릭확인

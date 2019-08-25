@@ -6,14 +6,16 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- css 시작 -->
-<link rel="stylesheet" href="${ pageContext.request.contextPath }/css/bootstrap.css">
+<%-- <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/bootstrap.css"> --%>
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/mainViews/slide.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/css/mainViews/MainSession.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- css 끝 -->
 
 <!-- js 시작 -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="${ pageContext.request.contextPath }/js/main/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script><!-- 이놈으로 모달 사용 가능 -->
+
 <!-- js 끝 -->
 </head>
 <body>
@@ -34,30 +36,34 @@
 	<!-- 회사 소개 4가지 -->
 	<div id="intro">
 		<ul id="first_ul">
-			<li class="first_li" id="f1"><a href="#none" id="four" class="button"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"></a></li>
+			<li class="first_li" id="f1"><img id="f1" src="${ pageContext.request.contextPath }/img/mainViews/top_banner1.jpg"  data-toggle="modal" data-target="#myModal"></li>
 			<li class="first_li" id="f2"><img id="f2" src="${ pageContext.request.contextPath }/img/mainViews/top_banner2.jpg"></li>
 			<li class="first_li" id="f3"><img id="f3" src="${ pageContext.request.contextPath }/img/mainViews/top_banner3.jpg"></li>
 			<li class="first_li" id="f4"><img id="f4" src="${ pageContext.request.contextPath }/img/mainViews/top_banner4.jpg"></li>
 		</ul>
 	</div>
 	<!-- 회사 소개 끝 -->
-	
-		
+
 <!-- Modal -->
-
-
-<div id="modal-container">
-	<div class="modal-background">
-		<div class="modal">
-			<h2>I'm a Modal</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, similique!</p>
-		</div>
-	</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Modal 끝 -->
-	
-	
-	
+
+
 	<!-- 이동 -->
 	<div id="wizmainbox">
 		<!-- 왼쪽 부분 -->
