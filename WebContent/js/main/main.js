@@ -38,54 +38,7 @@ $(function(){
 
 
 
-// 버튼이 눌렷을 경우
-function bestPrice(cate,p_type,t){
-	$(t).parents("dl").children().removeClass("active")
-	$(t).parents("dd").addClass("active");
 
-}
-
-// 모달 애니메이션 효과 주기
-$(function(){
-	var animates = {
-		 1:['animated zoomIn', 'animated zoomOut']
-		,2:['animated flipInX', 'animated flipOutX']
-		,3:['animated rotateIn', 'animated rotateOut']
-		,4:['animated bounceIn', 'animated bounceOut']
-		,5:['animated lightSpeedIn', 'animated lightSpeedOut']
-		,6:['animated slideInDown', 'animated slideOutUp']
-	};
-	
-	$('')
-
-	var select_num = 1;
-	$('#modal_open').click(function(){
-		select_num = Math.floor((Math.random() * 6)+ 1 );
-
-		$.each(animates, function(key, val){
-			$('.modal-content').removeClass(val[0]);
-		})		
-
-		$('#test_modal1').modal();
-		$('.modal-content').addClass(animates[select_num][0]); 
-		return false;
-	});
-
-	var hideDelay = true;
-	$('#test_modal1').on('hide.bs.modal',function(e){
-		if(hideDelay){
-			$('.modal-content').removeClass(animates[select_num][0]).addClass(animates[select_num][1]);
-			hideDelay = false;
-			setTimeout(function(){
-				$('#test_modal1').modal('hide');
-				$('.modal-content').removeClass(animates[select_num][1]).addClass(animates[select_num][0]);
-			},500);
-			return false;
-		}
-		hideDelay = true;
-		return true;
-	});
-});
 
 
 

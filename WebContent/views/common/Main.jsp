@@ -27,7 +27,7 @@
 			<img src="${ pageContext.request.contextPath }/img/mainViews/1.jpg" style="width:100%;height:auto;"/>
 			<img src="${ pageContext.request.contextPath }/img/mainViews/2.jpg" style="width:100%;height:auto; "/>
 			<img src="${ pageContext.request.contextPath }/img/mainViews/3.jpg"  style="width:100%;height:auto;"/>
-			<img src="${ pageContext.request.contextPath }/img/mainViews/4.jpg"  style="width:1920px;height:auto;"/>
+			<img src="${ pageContext.request.contextPath }/img/mainViews/4.jpg"  style="width:1920px;height:auto;"/> 
 		
 		</div>
 	</div>
@@ -44,7 +44,9 @@
 	</div>
 	<!-- 회사 소개 끝 -->
 
+
 <!-- Modal -->
+<!-- 회사 소개 -->
 <div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-xl ">
 			<div class="modal-content">
@@ -60,6 +62,7 @@
 			</div>
 		</div>
 	</div>
+<!-- 회사 소개 끝 -->
 
 <!-- 희망 배송 -->
 	<div class="modal fade bd-example-modal-xl" id="myModal2" tabindex="-1"
@@ -72,59 +75,52 @@
 				</div>
 				<br>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 36pt; color: rgb(0, 158, 37);">﻿<b>​옥동도시락
-							희망배송</b></span><br> <br>
+					<span style="font-size: 36pt; color: rgb(0, 158, 37);">﻿<b>​옥동도시락 희망배송</b></span><br> <br>
 				</p>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 24pt;"><b>아직도 기다리세요? 내가 원하는 날
-							배송받을 수 있어요!!</b></span>
+					<span style="font-size: 24pt;"><b>아직도 기다리세요? 내가 원하는 날 배송받을 수 있어요!!</b></span>
 				</p>
 				<p style="text-align: center;" align="center">
 					<span style="font-size: 14pt;"><b><br></b></span>
 				</p>
 				<p style="text-align: center; margin-left: 0px;" align="center">
-					<span style="font-size: 14pt;"><b><span
-							style="font-size: 24pt;">01 옥동 도시락 </span><span
-							style="color: rgb(0, 158, 37); font-size: 24pt;">희망배송</span> <span
-							style="font-size: 24pt;"> 이란?</span></b></span>
+					<span style="font-size: 14pt;"><b><span style="font-size: 24pt;">01 옥동 도시락 </span>
+					<span style="color: rgb(0, 158, 37); font-size: 24pt;">희망배송</span>
+					<span style="font-size: 24pt;"> 이란?</span></b></span>
 				</p>
 				<p style="text-align: center;" align="center">
 					<span style="font-size: 14pt;"><b><br></b></span>
 				</p>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 18.6667px;"><b><span
-							style="font-size: 24pt;">오직 옥동 도시락몰에만 있는 '지정일 예약 배송' </span><span
-							style="color: rgb(255, 0, 0); font-size: 24pt;"><span
-								style="color: rgb(0, 158, 37); font-size: 24pt;">서비스</span>&nbsp;<span
-								style="color: rgb(0, 0, 0); font-size: 24pt;">﻿로</span></span></b></span>
+					<span style="font-size: 18.6667px;"><b>
+					<span style="font-size: 24pt;">오직 옥동 도시락몰에만 있는 '지정일 예약 배송' </span>
+					<span style="color: rgb(255, 0, 0); font-size: 24pt;">
+					<span style="color: rgb(0, 158, 37); font-size: 24pt;">서비스</span>&nbsp;<span	style="color: rgb(0, 0, 0); font-size: 24pt;">﻿로</span></span></b></span>
 				</p>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 18.6667px;"><b><span
-							style="color: rgb(255, 0, 0);"><span
-								style="color: rgb(0, 0, 0); font-size: 24pt;">옥동 도시락몰
-									전상품을 희망배송으로 주문 할 수 있습니다.</span></span></b></span>
+					<span style="font-size: 18.6667px;"><b><span style="color: rgb(255, 0, 0);">
+					<span style="color: rgb(0, 0, 0); font-size: 24pt;">옥동 도시락몰	전상품을 희망배송으로 주문 할 수 있습니다.</span></span></b></span>
 				</p>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 18.6667px;"><span
-						style="color: rgb(255, 0, 0);"><span
-							style="color: rgb(0, 0, 0); font-size: 9pt;">(회원 전용 서비스
-								입니다.)</span></span></span>
+					<span style="font-size: 18.6667px;"><span style="color: rgb(255, 0, 0);">
+					<span style="color: rgb(0, 0, 0); font-size: 9pt;">(회원 전용 서비스입니다.)</span></span></span>
 				</p>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 18.6667px;"><span
-						style="color: rgb(255, 0, 0);"><span
-							style="color: rgb(0, 0, 0); font-size: 9pt;">​<span
-								style="font-size: 12pt;">﻿</span><br></span></span></span>
+					<span style="font-size: 18.6667px;">
+					<span style="color: rgb(255, 0, 0);">
+					<span style="color: rgb(0, 0, 0); font-size: 9pt;">​
+					<span style="font-size: 12pt;">﻿</span><br></span></span></span>
 				</p>
 				<p style="text-align: center;" align="center">
-					<span style="font-size: 18pt;">﻿01. 장바구니 담기 전 <span
-						style="color: rgb(0, 158, 37); font-size: 18pt;"><b>희망배송</b></span>
-						선택!!&nbsp; &nbsp;
-					</span><span style="font-size: 18pt;">02.상품을 </span><span
-						style="font-size: 18pt; color: rgb(0, 158, 37);"><b>수령하실
-							날</b></span><span style="font-size: 18pt;">을 선택하면 끝!!</span>
+					<span style="font-size: 18pt;">﻿01. 장바구니 담기 전 <span style="color: rgb(0, 158, 37); font-size: 18pt;"><b>희망배송</b>
+					</span>	선택!!&nbsp; &nbsp;</span>
+					<span style="font-size: 18pt;">02.상품을 </span>
+					<span style="font-size: 18pt; color: rgb(0, 158, 37);"><b>수령하실 날</b></span>
+					<span style="font-size: 18pt;">을 선택하면 끝!!</span>
 				</p>
-				<img src="${ pageContext.request.contextPath }/img/mainViews/Desired delivery guide.jpg" style="width: 100%; height: auto;">
+				<img
+					src="${ pageContext.request.contextPath }/img/mainViews/Desired delivery guide.jpg"
+					style="width: 100%; height: auto;">
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
@@ -132,7 +128,8 @@
 			</div>
 		</div>
 	</div>
-	<!--  -->
+	<!-- 희망 배송 끝 -->
+	<!-- 나만의 도시락 -->
 	<div class="modal fade bd-example-modal-xl" id="myModal3" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-xl ">
 			<div class="modal-content">
@@ -146,23 +143,27 @@
 			</div>
 		</div>
 	</div>
-	
-<div class="modal fade bd-example-modal-xl" id="myModal4" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+	<!-- 나만의 도시락 끝 -->
+	<!-- 이달의 도시락  -->
+	<div class="modal fade bd-example-modal-xl" id="myModal4" tabindex="-1"
+		role="dialog" aria-labelledby="myExtraLargeModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog modal-xl ">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h1 class="modal-title" id="myModalLabel">이달의 도시락</h1>
 				</div>
-			
+
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- 이다르이 도시락 끝  -->
 	<!-- Modal 끝 -->
 
-
+<!-- 하단 사진  왼쪽 오른쪽 -->
 	<!-- 이동 -->
 	<div id="wizmainbox">
 		<!-- 왼쪽 부분 -->
@@ -175,7 +176,9 @@
 		</div>
 	
 	</div>
-	
+<!-- 하단 사진 끝 -->
+
+<!-- 상품 리스트 -->	
 	<!-- 도시락 리스트 생산 품 -->
 	<div class="item-display-wrap">
 	<div class="mtitbox">
@@ -192,10 +195,10 @@
 	<div class="products_list">
 		<dl class="sort">
 			<dt >가격대별 베스트</dt>
-			<dd class="active" onclick="bestPrice('1002','',this); return false;">전체</dd>
-			<dd class=""  onclick="bestPrice('1002','',this); return false;">3만원 미만</dd>
-			<dd class=""  onclick="bestPrice('1002','',this); return false;">5만원 미만</dd>
-			<dd class=""  onclick="bestPrice('1002','',this); return false;">5만원 이상</dd>
+			<dd class="active" ><div><input type = "radio" value="1"  name = "all"><span>전체</span></div></dd>
+			<dd class=""  ><div><input type = "radio" value="2"  name = ""><span>3만원 이하</span></div></dd>
+			<dd class="" ><div><input type = "radio" value="3"  name = ""><span>3만원 이상</span></div></dd>
+			<dd class=""  ><div><input type = "radio" value="4"  name = ""><span>5만원 </span></div></dd>
 		
 		</dl>
 		<p class="btn_more">
