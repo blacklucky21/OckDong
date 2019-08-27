@@ -22,12 +22,12 @@
 <!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
 	<jsp:include page="/views/header/header.jsp"/>
 	<!-- 슬라이드 쇼 -->
-	<div class="content" style="width:100%; height:550px;overflow:hidden; margin:55px auto;">
+	<div class="content" style="width:100%; height:100%; overflow:hidden; margin:55px auto;">
 		<div id="slider">
-			<img src="${ pageContext.request.contextPath }/img/mainViews/1.jpg" style="width:100%;height:auto;"/>
-			<img src="${ pageContext.request.contextPath }/img/mainViews/2.jpg" style="width:100%;height:auto; "/>
-			<img src="${ pageContext.request.contextPath }/img/mainViews/3.jpg"  style="width:100%;height:auto;"/>
-			<img src="${ pageContext.request.contextPath }/img/mainViews/4.jpg"  style="width:1920px;height:auto;"/> 
+			<img src="${ pageContext.request.contextPath }/img/mainViews/mainsli.PNG" style="width:100%;height:100%;"/>
+			<img src="${ pageContext.request.contextPath }/img/mainViews/mainsli2.png "/>
+			<img src="${ pageContext.request.contextPath }/img/mainViews/3.jpg"  style="width:100%;height:100%;"/>
+			<img src="${ pageContext.request.contextPath }/img/mainViews/4.jpg"  style="width:1920px;height:100%;"/> 
 		
 		</div>
 	</div>
