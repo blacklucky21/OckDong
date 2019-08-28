@@ -44,8 +44,6 @@ $(this).find("> .mypage_sub").hide();
 
 //상하이동소스
 
-
-
 $(function() {
     var $elem = $('#wrap');
     
@@ -78,7 +76,7 @@ $(window).scroll(function(){
 	if( y > 300 ){
 		$('.btn_scroll').fadeIn();
 	} else {
-		$('.btn_scroll').fadeOut();
+	$('.btn_scroll').fadeOut();
 	}
 });
 function scrollup(){
@@ -96,13 +94,14 @@ jQuery(window).scroll(function(){
 	var hTop = jQuery('.topMenu').height();
 	var wScroll = jQuery(this).scrollTop();
 	if(jQuery(window).width() >= 0 && jQuery(window).height() > 0){
-		//alert(jQuery(window).width());
+		//alert("스크롤 이동 작동");
 		if(200 <= wScroll){
-			jQuery('.topMenu').addClass('fixed');
-
+			jQuery('.topMenu').addClass('fixed'); // 하단 메뉴
+		//	alert("아래 로 가면 작동");
+			$('#pagescroll').css("display","block"); // 스크롤 버튼
 		} else {
 			jQuery('.topMenu').removeClass('fixed');
-
+			$('#pagescroll').css("display","none");
 		}
 	} else {
 		jQuery('.topMenu').removeClass('fixed');

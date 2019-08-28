@@ -172,6 +172,7 @@ ul, ol, li {
 	position: fixed;
 	right: 50px;
 	z-index: 5;
+	display:none;
 }
 
 #top.header .logoBox h1 {
@@ -439,6 +440,7 @@ ul, ol, li {
 	top: 31px;
 	width: 100%;
 	z-index: 10;
+	
 } /* 메뉴고정  */
 .topMenu {
 	clear: both;

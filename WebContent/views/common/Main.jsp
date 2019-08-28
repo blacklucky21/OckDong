@@ -24,7 +24,7 @@
 	<!-- 슬라이드 쇼 -->
 	<div class="content" style="width:100%; height:100%; overflow:hidden; margin:55px auto;">
 		<div id="slider">
-			<img src="${ pageContext.request.contextPath }/img/mainViews/mainsli.PNG" style="width:100%;height:100%;"/>
+			<img src="${ pageContext.request.contextPath }/img/mainViews/mainsli.PNG" />
 			<img src="${ pageContext.request.contextPath }/img/mainViews/mainsli2.png "/>
 			<img src="${ pageContext.request.contextPath }/img/mainViews/3.jpg"  style="width:100%;height:100%;"/>
 			<img src="${ pageContext.request.contextPath }/img/mainViews/4.jpg"  style="width:1920px;height:100%;"/> 
@@ -45,7 +45,7 @@
 	<!-- 회사 소개 끝 -->
 
 
-<!-- Modal -->
+<!-- ################################### Modal ##############################################-->
 <!-- 회사 소개 -->
 <div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1"role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-xl ">
@@ -160,15 +160,16 @@
 			</div>
 		</div>
 	</div>
-	<!-- 이다르이 도시락 끝  -->
-	<!-- Modal 끝 -->
+	<!-- 이달의 도시락 끝 -->
+<!-- ################################### Modal 끝 ##############################################-->	
 
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$ 링크 이동 사진 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- 하단 사진  왼쪽 오른쪽 -->
 	<!-- 이동 -->
 	<div id="wizmainbox">
 		<!-- 왼쪽 부분 -->
 		<div id="box_left" class="first_li">
-			<img src="${ pageContext.request.contextPath }/img/mainViews/1.jpg" style="width:100%;height:100%;"/>
+			<img src="${ pageContext.request.contextPath }/img/mainViews/111.jpg" style="width:100%;height:100%;"/>
 		</div>
 		<!-- 우측 부분 -->
 		<div id="box_right" class="first_li">
@@ -178,8 +179,10 @@
 	</div>
 <!-- 하단 사진 끝 -->
 
-<!-- 상품 리스트 -->	
-	<!-- 도시락 리스트 생산 품 -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$ 링크 이동 사진 끝 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+<!-- @@@@@@@@@@@@@@@@@@@  상품 리스트 @@@@@@@@@@@@@@@-->	
+	<!-- 11111111111111111111 도시락 리스트 생산 품  111111111111111111111111-->
 	<div class="item-display-wrap">
 	<div class="mtitbox">
 		<div class="mtitle">
@@ -235,9 +238,10 @@
 	</div>
 	
 	</div>
-	<!-- 도시락 리스트 끝 -->
+<!-- 11111111111111111111 도시락 리스트 생산 품 끝  111111111111111111111111-->	
 	
-	<!-- 샐러드 -->
+	
+<!-- 22222222222222222222222222222 샐러드 222222222222222222222222222222 -->
 	<div class="item-display-wrap">
 	<div class="mtitbox">
 		<div class="mtitle">
@@ -292,14 +296,14 @@
 	</div>
 	
 	</div>
+<!-- 22222222222222222222222222222 샐러드 끝 222222222222222222222222222222 -->	
 	
-	<!--샐러드 리스트  -->
 	
-	<!-- 나만의 도시락 -->
+<!-- 33333333333333333333333333 나만의 도시락 3333333333333333333333333333333 -->
 	<div class="item-display-wrap">
 	<div class="mtitbox">
 		<div class="mtitle">
-			<span class="mname">lunch box of the months</span>
+			<span class="mname">lunch box of<br>the months</span>
 		</div>
 	</div>
 	<div class="cate_box cate_box1">
@@ -344,9 +348,7 @@
 	</div>
 	
 	</div>
-	
-	
-	<!-- 나만의 도시 끝 -->
+<!-- 33333333333333333333333333 나만의 도시락 끝 3333333333333333333333333333333 -->
 	
 	
 	<!-- 풋터  -->
