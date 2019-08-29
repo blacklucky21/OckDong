@@ -1,0 +1,17 @@
+#navrow {
+	display: flex;
+	width:1920px;
+}
+
+div:nth-child(3){
+	display: inherit;
+}
+
+div:nth-child(4) {
+	margin: auto;
+	margin-left: auto;
+}
+
+div:nth-child(5) {
+	margin: 4.8% 30px;
+}
