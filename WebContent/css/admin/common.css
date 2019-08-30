@@ -1,17 +1,107 @@
-#navrow {
+
+.top{
+	height: 85px;
+	height: 50px;
 	display: flex;
-	width:1920px;
+    background: linear-gradient(230deg, #ebefe8, #dddfe6);
+	background: -webkit-linear-gradient(230deg, #ebefe8, #dddfe6);
+	background: -moz-linear-gradient(230deg, #ebefe8, #dddfe6);
+	background: -ms-linear-gradient(230deg, #ebefe8, #dddfe6);
+	background: -o-linear-gradient(230deg, #ebefe8, #dddfe6); 
 }
 
-div:nth-child(3){
+#top_main > div:nti-child(1){
+	float:left
+	
+}
+
+div:nth-child(1) {
+	  display: inherit;
+	      flex: auto;
+}
+
+div:nth-child(n+2){
 	display: inherit;
+	    margin-left: 5px;
 }
 
-div:nth-child(4) {
-	margin: auto;
-	margin-left: auto;
+div:nth-child(2) {
+	    margin: auto 20px auto auto;	
 }
 
-div:nth-child(5) {
-	margin: 4.8% 30px;
+ul,li {
+	list-style: none;
+	padding: 10px;
+	
+}
+
+/* 아코디언 메뉴 숨김 */
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+.menu_depth1{
+	    cursor: pointer;
+}
+
+nav.mo_slide_menu {
+	position: fixed;
+	left: 0;
+	width:220px;
+	height: 100%;
+	background: #333;
+	color: #000;
+	overflow-y: auto;
+	background: linear-gradient(230deg, #dddfe6, #ebefe8);
+	background: -webkit-linear-gradient(230deg, #dddfe6, #ebefe8);
+	background: -moz-linear-gradient(230deg, #dddfe6, #ebefe8);
+	background: -ms-linear-gradient(230deg, #dddfe6, #ebefe8);
+	background: -o-linear-gradient(230deg, #dddfe6, #ebefe8); 
+}
+
+.accor_has_sub {
+	font-weight: normal;
+}
+
+.accor_has_sub a.menu_depth1 {
+	display: block;
+	height: 33px;
+	padding: 17px 0 0 17px;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+}
+
+.active a.menu_depth1 {
+	background-size: 18.5px 18.5px;
+}
+/* 서브 메뉴*/
+
+.accor_has_sub a.menu_depth2 {
+	display: block;
+	padding: auto;
+	font-size: 0.98em;
+	color: #000;
+	text-decoration: none;
+	list-style: none;
+}
+
+.accor_has_sub a.menu_depth2:hover{
+	color: white;
+	text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000;
+	
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+
+
+.acc_subject {
+	display: none;
+}
+
+
+.acc_subject li:first-child {
+	border: none;
 }

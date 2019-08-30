@@ -1,0 +1,115 @@
+
+
+section{
+	border: 3px solid black;
+	background-color:#e9eaed;
+} 
+
+.warp{
+	/* 네비게이션 바 옆 부터 시작함 */
+	border: 2px solid red;
+    margin: 0 0 0 13.22%;
+}
+
+/* 세션 범위 안 값 */
+.content_top_wrap {
+    position: relative;
+    margin-top: 20px !important;
+}
+
+.content_top {
+    position: relative;
+        margin: 0 auto !important;
+    padding: 0 45px;
+    box-sizing: content-box;
+    
+}
+
+.present_summary_wrap {
+    overflow: hidden;
+    height: 367px;
+    padding: 40px 0 0 0;
+    margin-left: -20px;
+    box-sizing: content-box;
+}
+.present_summary_wrap > div {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+}
+
+.present_summary_wrap > div {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-left: 20px;
+    border: 0 !important;
+    box-sizing: border-box;
+}
+
+.present_summary_bx {
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.present_summary_wrap .items {
+	overflow: hidden;
+	padding-top: 11px;
+	color: #494949;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: center;
+	margin: auto;
+}
+
+.present_summary_wrap .items > div {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 31.2%;
+    height: 108px;
+    margin: 0 3% 10px 0;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+.present_summary_wrap .items > div:nth-child(3n+0) {
+    margin-right: 0 !important;
+}
+
+.present_summary_wrap .title {
+    padding-bottom: 23px;
+    color: #494949;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.present_summary_wrap .summary_mini_title {
+    display: block;
+    padding-top: 8px;
+    font-size: 12px;
+    color: #9a9a9a;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.title .summary_mini_title {
+    font-size: 12px;
+}
+
+#product_summary_refresh_button {
+    top: 26px;
+    right: 30px;
+    width: 28px;
+    text-align: center;
+}
+
+.title > span:nth-child(2){
+	float:right;
+	cursor: pointer;
+}
