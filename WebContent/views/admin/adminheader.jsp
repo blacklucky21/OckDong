@@ -25,9 +25,9 @@
 <header class="top">
 <!-- 가로 영역 -->
 <div id="top_main">
-	<div><img src="${ pageContext.request.contextPath }/img/admin/admin-logo.png"  alt="상단 로고" title="상단 로고" /></div>
+	<div class="div1"><img src="${ pageContext.request.contextPath }/img/admin/admin-logo.png"  alt="상단 로고" title="상단 로고" /></div>
 
-	<div>
+	<div class="div2">
 		<span><img src="${ pageContext.request.contextPath }/img/admin/set.png"></span>
 		<span><img src="${ pageContext.request.contextPath }/img/admin/bell.png"></span>
 		<span><img src="${ pageContext.request.contextPath }/img/admin/menu.png">전체메뉴 열기</span>

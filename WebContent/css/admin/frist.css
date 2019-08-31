@@ -1,20 +1,17 @@
 
 
 section{
-	border: 3px solid black;
 	background-color:#e9eaed;
 } 
 
 .warp{
 	/* 네비게이션 바 옆 부터 시작함 */
-	border: 2px solid red;
     margin: 0 0 0 13.22%;
 }
 
 /* 세션 범위 안 값 */
 .content_top_wrap {
     position: relative;
-    margin-top: 20px !important;
 }
 
 .content_top {
@@ -23,6 +20,10 @@ section{
     padding: 0 45px;
     box-sizing: content-box;
     
+}
+/*호버효과 */
+.present_summary_wrap .items > div:hover, .ri:hover, img:hover{
+    cursor: pointer;
 }
 
 .present_summary_wrap {
@@ -113,3 +114,135 @@ section{
 	float:right;
 	cursor: pointer;
 }
+
+.present_summary_wrap .items_tit {
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    margin-left: -33px;
+    width: 66px;
+    font-size: 13px;
+    color: #8b8b8b;
+    line-height: 15px;
+    font-weight: bold;
+    word-break: keep-all;
+}
+/* 숫자위치잡기 */
+.present_summary_wrap .items_count {
+    padding-top: 28px;
+    margin:0;
+}
+
+/* 안내 안의 숫자 span */
+
+.present_summary_wrap .items_count span {
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* 건글자 가리기 */
+.present_summary_wrap .items_count span:nth-child(2) {
+    display: none;
+}
+
+/*상품 문의 */
+
+.ps_blind{
+	font-size: medium;
+}
+
+
+.product_inquiry_content_wrap > .items  .ps_li{
+	display: inline-block;
+    
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.product_inquiry_content_wrap > .items  > span{
+    text-overflow: ellipsis;
+    color: #333333;
+}
+.product_inquiry_content_wrap > .items .le{
+	color: #8b8b8b;
+	float:left
+}
+
+.product_inquiry_content_wrap > .items .ri{
+	float:right;
+}
+/* ============== top =============  */
+
+
+/* bot 시작 */
+.botwrap{
+    margin: 2% 0 0 14.22%;
+    height:470px;
+}
+
+.content_bot_wrap {
+    position: relative;
+    margin-top: 20px !important;
+
+}
+
+.content_bot_wrap > .com{
+	border-radius: 15px;
+    width: 47%;
+    height: 359px;
+    padding:20px;
+    display: inline-block;
+    margin-left: 25px;
+    float: left;
+    background: #fff;
+}
+.botul li{
+	background: #f8f8f8;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+.botul span:nth-child(1){
+	color: #8b8b8b;
+	font-weight: bold;
+    font-size: 22px;
+}
+.botul .sprofit{
+	font-weight: bold;
+    font-size: 22px;
+	float: right;
+}
+.botul .sprofit::after{
+	content: "원";
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
