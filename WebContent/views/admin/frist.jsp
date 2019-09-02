@@ -138,10 +138,16 @@
                         </div>
                          <div class="product_inquiry_content_wrap">
                             <div class="items">
-                                	<span class="ps_li le">미답변 문의</span>
-                                	<span class="ps_li ri">0</span>
-                                	<span class="ps_li le">전체문의 내역</span>
-									<span class="ps_li ri">0</span>
+                            	<ul class="itemsul">
+                                	<li>
+                                		<span class="ps_li le">미답변 문의</span>
+                                		<span class="ps_li ri">5000</span>
+                                	</li>
+                                	<li>
+                                		<span class="ps_li le">전체문의 내역</span>
+										<span class="ps_li ri">100</span>
+									</li>
+								</ul>
                             </div>
                         </div>
                     </div>
@@ -164,7 +170,7 @@
 	 			</li>
 	 			<li>
 	 				<span>월 수입</span>
-	 				<span class="sprofit">134443</span>
+	 				<span class="sprofit">1000000</span>
 	 			</li>
 	 			<li>
 	 				<span>금년 수입</span>
@@ -177,6 +183,18 @@
 	 	
 	 	<!-- 공지사항 -->
 	 	<div class="com notice">
+	 	<h1>공지사항</h1>
+	 	<div class="notice_content_wrap">
+	 		<table id="notice_normal_table" class="notice_table" >
+	 			<% for(int i = 0; i < 4; i++){ %>
+	 			<tr>
+	 				<td class="left"><span>[SNS마켓 성장지원 프로젝트] 제 2의 스타일난다를 찾습니다!</span></td>
+	 				<td class="right"><span>2019-08-21</span><td>
+	 			</tr>
+	 			<% } %>
+	 		</table>
+	 	</div>
+	 	
 	 	</div>
 	 	<!-- 공지사항 끝 -->
 	</div> 
@@ -187,3 +205,4 @@
 
 </body>
 </html>
+

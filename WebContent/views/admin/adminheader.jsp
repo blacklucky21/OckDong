@@ -49,7 +49,7 @@
         <li class="accor_has_sub active">
             <strong class="menu_depth1">상품관리</strong>
             <ul class="acc_subject">
-                <li><a href="#" class="menu_depth2">상품 리스트</a></li>
+                <li><a href="list.do" class="menu_depth2">상품 리스트</a></li>
                 <li><a href="#" class="menu_depth2">상품등록</a></li>
                 <li><a href="#" class="menu_depth2">상품후기</a></li>
                 <li><a href="#" class="menu_depth2">상품문의</a></li>
