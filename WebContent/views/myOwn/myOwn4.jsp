@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -76,7 +76,7 @@ table, tr, td{
 	position: relative;
     top: 190px;
     left: 40px;
-    width: 250px;
+    width: 230px;
     height: 160px;
 }
 .myOwnSpan{
@@ -86,19 +86,40 @@ table, tr, td{
     height: 100%;
     overflow: hidden;
 }
-.myOwnImg{
-	max-width: 100%;
-    height: auto;
+.myOwnSpan>img{
+	width: 100%;
+    height: 100%;
 }
 .aBtn:hover{
 	cursor: pointer;
 }
 .soup{
 	position: relative;
-    top: 190px;
-    left: 100px;
-    width: 250px;
+    top: 30px;
+    left: 290px;
+    width: 160px;
     height: 160px;
+}
+.main{
+	position: relative;
+    width: 200px;
+    height: 120px;
+    top: -260px;
+    left: 45px
+}
+.sub1{
+	position: relative;
+    width: 90px;
+    height: 120px;
+    top: -380px;
+    left: 360px;
+}
+.sub2{
+	position: relative;
+    width: 80px;
+    height: 120px;
+    top: -500px;
+    left: 256px;
 }
 </style>
 </head>
@@ -108,7 +129,7 @@ table, tr, td{
 
 	<div style="width: 100%; height: 1000px; margin: 5% 0;">
 
-		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px;">
+		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
 			<div
 				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
 				<div style="width: 100%; height: 20%;">
@@ -126,28 +147,23 @@ table, tr, td{
 						src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG"
 						style="width: 50%; height: auto;" /> --%>
 						<div class="rice">
-							<span class="myOwnSpan">
-								<img class="myOwnImg" src="/OckDong/img/myOwn/도시락4찬.PNG">
+							<span id="rice" class="myOwnSpan" ondrop="drop(event)" ondragover="allowDrop(event)">
 							</span>
 						</div>
 						<div class="soup">
-							<span class="myOwnSpan">
-								<img class="myOwnImg" src="/OckDong/img/myOwn/도시락5찬.PNG">
+							<span id="soup" class="myOwnSpan" ondrop="drop(event)" ondragover="allowDrop(event)">
 							</span>
 						</div>
 						<div class="main">
-							<span>
-								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
+							<span id="main" class="myOwnSpan" ondrop="drop(event)" ondragover="allowDrop(event)">
 							</span>
 						</div>
 						<div class="sub1">
-							<span>
-								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
+							<span id="sub1" class="myOwnSpan" ondrop="drop(event)" ondragover="allowDrop(event)">
 							</span>
 						</div>
 						<div class="sub2">
-							<span>
-								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
+							<span id="sub2" class="myOwnSpan" ondrop="drop(event)" ondragover="allowDrop(event)">
 							</span>
 						</div>
 					</div>
@@ -164,12 +180,12 @@ table, tr, td{
 						<h2 class="data-title"></h2>
 						<div class="viewport">
 							<ul>
-								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice1" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice2" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice3" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice4" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice5" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice6" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -179,7 +195,8 @@ table, tr, td{
 					<dt class="side_menu">
 						<span class="span_menu">반찬류1</span><img class="img_btn" src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" />
 					</dt>
-					<dd class="side_tedo"></dd>
+					<dd class="side_tedo">
+					</dd>
 
 					<dt class="side_menu">
 						<span class="span_menu">반찬류1</span><img class="img_btn" src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" />
@@ -236,12 +253,7 @@ table, tr, td{
 				$(".viewport>ul").animate({ marginLeft: - width * index * 4 });
 			}
 			
-			/* for(let i=0; i <length; i++){
-				$("<button></button>").text(i).click(function(){
-					moveTo(i);
-				}).appendTo(".buttons");
-			} */
-			var helf = length/2 + length%2 - 1;
+			var helf = parseInt(length/4 + "") + (length%4>0?1:0);
 			for(let i=0; i <helf; i++){(function (i){
 					$("<a class='aBtn'></a>").text(i + 1).click(function(){
 						moveTo(i);
@@ -261,7 +273,70 @@ table, tr, td{
 		});
 
 		
-		
+		function allowDrop(ev) {
+		    ev.preventDefault();
+		}
+		 
+		function drag(ev) {
+		    ev.dataTransfer.setData("text", ev.target.id);
+		}
+		 
+		function drop(ev) {
+			ev.preventDefault();
+			
+			name = $(ev.target).prop('tagName');
+			
+			if(name=='SPAN'){
+				console.log("span임");
+			    var data = ev.dataTransfer.getData("text");
+			    var img = document.getElementById(data);
+			    console.log(img.id);
+			    if(img.id.includes('rice') && ev.target.id == 'rice'){
+			    	console.log("밥 확인");
+			    	ev.target.innerHTML = "<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
+			    }
+			    
+			    if(img.id.includes('soup') && ev.target.id == 'soup'){
+			    	console.log("국 확인");
+			    }
+			    if(img.id.includes('main') && ev.target.id == 'main'){
+			    	console.log("메인 확인");
+			    }
+			    if(img.id.includes('sub1') && ev.target.id == 'sub1'){
+			    	console.log("반찬1 확인");
+			    }
+			    if(img.id.includes('sub2') && ev.target.id == 'sub2'){
+			    	console.log("반찬1 확인");
+			    }
+			    
+			    
+			}else{
+				console.log("span이 아님");
+				var spanId = $(ev.target).closest("span")[0].id;
+				$("#" + spanId).empty();
+				var data = ev.dataTransfer.getData("text");
+				var img = document.getElementById(data);
+				
+				if(img.id.includes('rice') && spanId == 'rice'){
+			    	console.log("밥 확인");
+			    	$("#" + spanId).html("<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
+			    }
+				if(img.id.includes('soup') && spanId == 'soup'){
+			    	console.log("국 확인");
+			    }
+			    if(img.id.includes('main') && spanId == 'main'){
+			    	console.log("메인 확인");
+			    }
+			    if(img.id.includes('sub1') && spanId == 'sub1'){
+			    	console.log("반찬1 확인");
+			    }
+			    if(img.id.includes('sub2') && spanId == 'sub2'){
+			    	console.log("반찬1 확인");
+			    }
+			}
+			
+			
+		}
 		
 		
 		

@@ -183,7 +183,7 @@
         </ul>
     </li>
     <li  >
-        <a href="" >나만의 도시락</a>
+        <a href="views/myOwn/myOwn.jsp" >나만의 도시락</a>
     </li>
    
    
