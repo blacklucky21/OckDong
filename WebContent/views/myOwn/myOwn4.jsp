@@ -1,5 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*, model.vo.Img" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+	ArrayList<Img> riceList = new ArrayList<Img>();
+
+	riceList.add(new Img(1,"백미","백미_1.png","img/myOwn/4찬/1_밥/백미_1.png"));
+	riceList.add(new Img(2,"보리밥","보리밥_1.png","img/myOwn/4찬/1_밥/보리밥_1.png"));
+	riceList.add(new Img(3,"볶음밥","볶음밥_1.png","img/myOwn/4찬/1_밥/볶음밥_1.png"));
+	riceList.add(new Img(4,"비빔밥","비빔밥_1.png","img/myOwn/4찬/1_밥/비빔밥_1.png"));
+	riceList.add(new Img(5,"새우볶음밥","새우볶음밥_1.png","img/myOwn/4찬/1_밥/새우볶음밥_1.png"));
+	riceList.add(new Img(5,"오곡밥","오곡밥_1.png","img/myOwn/4찬/1_밥/오곡밥_1.png"));
+	
+	System.out.println(riceList);
+	
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -114,10 +128,10 @@ table, tr, td{
     top: -440px;
     left: 233px;
 }
-.myOwnTable>div{
+/* .myOwnTable>div{
 	background: #2ecc71;
 	border-radius: 15px;
-}
+} */
 .bottom{
 	width: 70%;
 	height: 400px;
@@ -151,7 +165,7 @@ table, tr, td{
 	<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
 	<jsp:include page="/views/header/header.jsp" />
 
-	<div style="width: 100%; height: 1500px; margin: 5% 0;">
+	<div style="width: 100%; height: 1600px; margin: 5% 0;">
 		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
 			<div style="text-align:center;">
 				<h1 style="font-family: 'Single Day', cursive;">나만의 도시락</h1>
@@ -199,12 +213,12 @@ table, tr, td{
 					<dd class="side_tedo">
 						<div class="viewport">
 							<ul class="rices_ul">
-								<li class="rices_li"><a href="#"><img id="rice1" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice2" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice3" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice4" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice5" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice6" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<%-- <% for(int i=0; i<riceList.size();i++){ %>
+									<li class="rices_li"><img id="rice<%=i %>" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/<%=riceList.get(i).getImgRealPath() %>"/></li>
+								<% } %> --%>
+								<c:forEach var="rice" items="${riceList }" varStatus="i">
+									<li class="rices_li"><img id="rice${i.count}" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/${rice.ImgRealPath}"/></li>
+								</c:forEach>
 							</ul>
 						</div>
 						<br clear="all">
@@ -217,12 +231,12 @@ table, tr, td{
 					<dd class="side_tedo">
 						<div class="viewport">
 							<ul class="main_ul">
-								<li class="mains_li"><a href="#"><img id="main1" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main2" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main3" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main4" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main5" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main6" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main1" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath}/img/myOwn/sample.jpg" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main2" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath}/img/myOwn/도시락5찬.PNG" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main3" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath}/img/myOwn/도시락4찬.PNG" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main4" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath}/img/myOwn/도시락5찬.PNG" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main5" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath}/img/myOwn/sample.jpg" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main6" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath}/img/myOwn/도시락5찬.PNG" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -236,11 +250,11 @@ table, tr, td{
 						<div class="viewport">
 							<ul class="sub1_ul">
 								<li class="sub1s_li"><a href="#"><img id="sub1s1" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="sub1s_li"><a href="#"><img id="sub1s2" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="sub1s_li"><a href="#"><img id="sub1s2" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub1s_li"><a href="#"><img id="sub1s3" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
 								<li class="sub1s_li"><a href="#"><img id="sub1s4" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub1s_li"><a href="#"><img id="sub1s5" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="sub1s_li"><a href="#"><img id="sub1s6" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="sub1s_li"><a href="#"><img id="sub1s6" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -254,11 +268,11 @@ table, tr, td{
 						<div class="viewport">
 							<ul class="sub2_ul">
 								<li class="sub2s_li"><a href="#"><img id="sub2s1" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="sub2s_li"><a href="#"><img id="sub2s2" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="sub2s_li"><a href="#"><img id="sub2s2" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub2s_li"><a href="#"><img id="sub2s3" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
 								<li class="sub2s_li"><a href="#"><img id="sub2s4" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub2s_li"><a href="#"><img id="sub2s5" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="sub2s_li"><a href="#"><img id="sub2s6" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="sub2s_li"><a href="#"><img id="sub2s6" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -292,6 +306,10 @@ table, tr, td{
 			var src = $(this).attr('src');
 			$('.myOwnTable').css('background-image', 'url(' + src + ')');
 		}); */
+		
+		$(function(){
+			console.log("${pageContext.request.contextPath }");
+		});
 		
 		$(function(){
 			$('.lunch4').click(function(){
@@ -432,19 +450,19 @@ table, tr, td{
 			    console.log(img.id);
 			    if(img.id.includes('rice') && ev.target.id == 'rice'){
 			    	console.log("밥 확인");
-			    	ev.target.innerHTML = "<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
+			    	ev.target.innerHTML = "<img name='selectedRice' id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
 			    }
 			    if(img.id.includes('main') && ev.target.id == 'main'){
 			    	console.log("메인 확인");
-			    	ev.target.innerHTML = "<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
+			    	ev.target.innerHTML = "<img name='selectedMain' id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
 			    }
 			    if(img.id.includes('sub1') && ev.target.id == 'sub1'){
 			    	console.log("반찬1 확인");
-			    	ev.target.innerHTML = "<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
+			    	ev.target.innerHTML = "<img name='selectedSub1' id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
 			    }
 			    if(img.id.includes('sub2') && ev.target.id == 'sub2'){
 			    	console.log("반찬1 확인");
-			    	ev.target.innerHTML = "<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
+			    	ev.target.innerHTML = "<img name='selectedSub2' id=\'"+img.id+"\' src=\'" + img.src + "\'/>";
 			    }
 			    
 			    
@@ -457,22 +475,22 @@ table, tr, td{
 				if(img.id.includes('rice') && spanId == 'rice'){
 			    	console.log("밥 확인");
 			    	$("#" + spanId).empty();
-			    	$("#" + spanId).html("<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
+			    	$("#" + spanId).html("<img name='selectedRice' id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
 			    }
 			    if(img.id.includes('main') && spanId == 'main'){
 			    	console.log("메인 확인");
 			    	$("#" + spanId).empty();
-			    	$("#" + spanId).html("<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
+			    	$("#" + spanId).html("<img name='selectedMain' id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
 			    }
 			    if(img.id.includes('sub1') && spanId == 'sub1'){
 			    	console.log("반찬1 확인");
 			    	$("#" + spanId).empty();
-			    	$("#" + spanId).html("<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
+			    	$("#" + spanId).html("<img name='selectedSub1' id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
 			    }
 			    if(img.id.includes('sub2') && spanId == 'sub2'){
 			    	console.log("반찬1 확인");
 			    	$("#" + spanId).empty();
-			    	$("#" + spanId).html("<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
+			    	$("#" + spanId).html("<img name='selectedSub2' id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
 			    }
 			}
 		}

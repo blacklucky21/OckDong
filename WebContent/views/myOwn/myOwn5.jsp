@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -121,10 +121,10 @@ table, tr, td{
     top: -500px;
     left: 256px;
 }
-.myOwnTable>div{
+/* .myOwnTable>div{
 	background: #2ecc71;
 	border-radius: 15px;
-}
+} */
 .bottom{
 	width: 70%;
 	height: 200px;
@@ -152,12 +152,13 @@ table, tr, td{
     transition: all 1s;
 }
 </style>
+<link href="https://fonts.googleapis.com/css?family=Single+Day&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
 	<jsp:include page="/views/header/header.jsp" />
 
-	<div style="width: 100%; height: 1500px; margin: 5% 0;">
+	<div style="width: 100%; height: 1700px; margin: 5% 0;">
 
 		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
 			<div style="text-align:center;">
@@ -210,12 +211,12 @@ table, tr, td{
 					<dd class="side_tedo">
 						<div class="viewport">
 							<ul class="rices_ul">
-								<li class="rices_li"><a href="#"><img id="rice1" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice2" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice3" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice4" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice5" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="rices_li"><a href="#"><img id="rice6" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice1" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/5_밥/백미_5.png" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice2" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/5_밥/보리밥_5.png" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice3" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/5_밥/볶음밥_5.png" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice4" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/5_밥/비빔밥_5.png" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice5" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/5_밥/새우볶음밥_5.png" /></a></li>
+								<li class="rices_li"><a href="#"><img id="rice6" class="rices" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/5_밥/오곡밥_5.png" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -228,12 +229,18 @@ table, tr, td{
 					<dd class="side_tedo">
 						<div class="viewport">
 							<ul class="soup_ul">
-								<li class="soups_li"><a href="#"><img id="soup1" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="soups_li"><a href="#"><img id="soup2" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li class="soups_li"><a href="#"><img id="soup3" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li class="soups_li"><a href="#"><img id="soup4" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li class="soups_li"><a href="#"><img id="soup5" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="soups_li"><a href="#"><img id="soup6" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup1" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/갈치구이_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup2" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/낙지볶음_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup3" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/닭갈비_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup4" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/닭강정_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup5" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/돼지갈비_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup6" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/돼지고기볶음_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup7" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/등심돈까스_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup8" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/떡갈비_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup9" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/매운갈비찜_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup10" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/생선까스_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup11" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/소불고기_6.png" /></a></li>
+								<li class="soups_li"><a href="#"><img id="soup12" class="soups" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/소세지볶음_6.png" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -246,12 +253,24 @@ table, tr, td{
 					<dd class="side_tedo">
 						<div class="viewport">
 							<ul class="main_ul">
-								<li class="mains_li"><a href="#"><img id="main1" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main2" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main3" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main4" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main5" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="mains_li"><a href="#"><img id="main6" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main1" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/갈치구이_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main2" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/낙지볶음_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main3" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/닭갈비_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main4" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/닭강정_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main5" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/돼지갈비_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main6" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/돼지고기볶음_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main7" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/등심돈까스_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main8" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/떡갈비_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main9" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/매운갈비찜_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main10" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/생선까스_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main11" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/소불고기_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main12" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/소세지볶음_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main13" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/갈치구이_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main14" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/낙지볶음_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main15" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/닭갈비_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main16" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/닭강정_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main17" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/돼지갈비_6.png" /></a></li>
+								<li class="mains_li"><a href="#"><img id="main18" class="mains" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/5찬/6_메인/돼지고기볶음_6.png" /></a></li>
 							</ul>
 						</div>
 						<br clear="all">
@@ -265,7 +284,7 @@ table, tr, td{
 						<div class="viewport">
 							<ul class="sub1_ul">
 								<li class="sub1s_li"><a href="#"><img id="sub1s1" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="sub1s_li"><a href="#"><img id="sub1s2" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="sub1s_li"><a href="#"><img id="sub1s2" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub1s_li"><a href="#"><img id="sub1s3" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
 								<li class="sub1s_li"><a href="#"><img id="sub1s4" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub1s_li"><a href="#"><img id="sub1s5" class="sub1s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
@@ -283,7 +302,7 @@ table, tr, td{
 						<div class="viewport">
 							<ul class="sub2_ul">
 								<li class="sub2s_li"><a href="#"><img id="sub2s1" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li class="sub2s_li"><a href="#"><img id="sub2s2" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li class="sub2s_li"><a href="#"><img id="sub2s2" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub2s_li"><a href="#"><img id="sub2s3" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
 								<li class="sub2s_li"><a href="#"><img id="sub2s4" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
 								<li class="sub2s_li"><a href="#"><img id="sub2s5" class="sub2s" draggable="true" ondragstart="drag(event)" src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
