@@ -122,7 +122,34 @@ table, tr, td{
     left: 256px;
 }
 .myOwnTable>div{
-	background-color: green;
+	background: #2ecc71;
+	border-radius: 15px;
+}
+.bottom{
+	width: 70%;
+	height: 200px;
+	margin-left: 15%;
+	margin-top: 5%;
+	text-align: center;
+}
+.buttons input[type=button]{
+	border-radius: 15px;
+	background: #2ecc71;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.buttons input[type=button]:hover{
+	color: #2ecc71;
+    background: #fff;
+    border: 1px solid #2ecc71;
+    transition-duration: 1s;
+    transform-origin: top left;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 </style>
 </head>
@@ -134,7 +161,7 @@ table, tr, td{
 
 		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
 			<div
-				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
+				style="width: 70%; height: auto; margin-left: 15%;">
 				<div style="width: 100%; height: 20%;">
 					<span style="width: 100%; height: 100%;">
 						<img style="margin-right: 28%;" />
@@ -172,7 +199,7 @@ table, tr, td{
 				</div>
 			</div>
 			<div class="acodian_menu_list"
-				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
+				style="width: 70%; height: auto; margin-left: 15%;">
 				<dl>
 					<dt class="side_menu">
 						<span class="span_menu">밥 종류</span> <img class="img_btn" src="${pageContext.request.contextPath }/img/myOwn/plus.jpg" />
@@ -266,8 +293,17 @@ table, tr, td{
 					
 				</dl>
 			</div>
+		<div class="bottom">
+			<div class="payment">
+				가격 : 4000원
+			</div>
+			<div class="buttons">
+				<input class="button1" type="button" value="구매하기" style="width:100px; height:50px;"/>
+				<input class="button1" type="button" value="내가 만든 도시락 추가" style="width:200px; height:50px;"/>
+			</div>
 		</div>
 	</div>
+</div>
 
 	<jsp:include page="/views/footer/footer.jsp"/>
 
