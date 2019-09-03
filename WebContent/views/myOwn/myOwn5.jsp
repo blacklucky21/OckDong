@@ -121,6 +121,9 @@ table, tr, td{
     top: -500px;
     left: 256px;
 }
+.myOwnTable>div{
+	background-color: green;
+}
 </style>
 </head>
 <body>
@@ -133,12 +136,10 @@ table, tr, td{
 			<div
 				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
 				<div style="width: 100%; height: 20%;">
-					<span style="width: 100%; height: 100%;"> <img
-						style="margin-right: 28%;" /> <img class="lunch_size"
-						src="/OckDong/img/myOwn/도시락4찬.PNG"
-						style="width: 20%; margin-right: 5%;" /> <img class="lunch_size"
-						src="/OckDong/img/myOwn/도시락5찬.PNG"
-						style="width: 20%;" />
+					<span style="width: 100%; height: 100%;">
+						<img style="margin-right: 28%;" />
+						<img class="lunch_size lunch4" src="/OckDong/img/myOwn/도시락4찬.PNG" style="width: 20%; margin-right: 5%;" />
+						<img class="lunch_size lunch5" src="/OckDong/img/myOwn/도시락5찬.PNG" style="width: 20%;" />
 					</span>
 				</div>
 				<div style="width: 100%; height: 400px; text-align:center;">
@@ -276,9 +277,17 @@ table, tr, td{
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script>
-		$(".lunch_size").click(function() {
+		/* $(".lunch_size").click(function() {
 			var src = $(this).attr('src');
 			$('.myOwnTable').css('background-image', 'url(' + src + ')');
+		}); */
+		$(function(){
+			$('.lunch4').click(function(){
+				location.href="myOwn4.jsp";
+			});
+			$('.lunch5').click(function(){
+				location.href="myOwn5.jsp";
+			});
 		});
 		
 		$(function(){
@@ -489,12 +498,7 @@ table, tr, td{
 			    	$("#" + spanId).html("<img id=\'"+img.id+"\' src=\'" + img.src + "\'/>");
 			    }
 			}
-			
-			
 		}
-		
-		
-		
 	</script>
 </body>
 </html>
