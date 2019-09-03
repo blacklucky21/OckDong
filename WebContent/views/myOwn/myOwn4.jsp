@@ -34,6 +34,7 @@
 	margin: 0 auto;
 	padding: 10px;
 	overflow: auto;
+	margin-left: 1%;
 }
 
 .side_menu .span_menu {
@@ -53,7 +54,7 @@ ul, li {
 }
 
 .viewport img {
-	width: 343px;
+	width: 250px;
 	height: 147px;
 }
 
@@ -65,14 +66,14 @@ table, tr, td{
 	background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
+    /* position: absolute; */
     overflow: hidden;
-    display: block;
+    display: inline-block;
     width: 500px;
     height: 400px;
 }
 .rice{
-	position: absolute;
+	position: relative;
     top: 190px;
     left: 40px;
     width: 250px;
@@ -89,7 +90,16 @@ table, tr, td{
 	max-width: 100%;
     height: auto;
 }
-
+.aBtn:hover{
+	cursor: pointer;
+}
+.soup{
+	position: relative;
+    top: 190px;
+    left: 100px;
+    width: 250px;
+    height: 160px;
+}
 </style>
 </head>
 <body>
@@ -98,7 +108,7 @@ table, tr, td{
 
 	<div style="width: 100%; height: 1000px; margin: 5% 0;">
 
-		<div style="width: 100%; height: 100%; max-width: 1200px; min-width: 1200px; margin-left: 20%;">
+		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px;">
 			<div
 				style="width: 70%; height: auto; border: 1px solid black; margin-left: 15%;">
 				<div style="width: 100%; height: 20%;">
@@ -110,7 +120,7 @@ table, tr, td{
 						style="width: 20%;" />
 					</span>
 				</div>
-				<div style="width: 100%; height: 400px; margin-left: 22%;">
+				<div style="width: 100%; height: 400px; text-align:center;">
 					<div class="myOwnTable">
 						<%-- <img class="lunch_size_choice"
 						src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG"
@@ -119,27 +129,27 @@ table, tr, td{
 							<span class="myOwnSpan">
 								<img class="myOwnImg" src="/OckDong/img/myOwn/도시락4찬.PNG">
 							</span>
-						</div><!-- 
-						<div class="menu1">
+						</div>
+						<div class="soup">
+							<span class="myOwnSpan">
+								<img class="myOwnImg" src="/OckDong/img/myOwn/도시락5찬.PNG">
+							</span>
+						</div>
+						<div class="main">
 							<span>
 								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
 							</span>
 						</div>
-						<div class="menu1">
+						<div class="sub1">
 							<span>
 								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
 							</span>
 						</div>
-						<div class="menu1">
+						<div class="sub2">
 							<span>
 								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
 							</span>
 						</div>
-						<div class="menu1">
-							<span>
-								<img class="imgRice" src="/OckDong/img/myOwn/도시락4찬.PNG">
-							</span>
-						</div> -->
 					</div>
 					
 				</div>
@@ -152,17 +162,18 @@ table, tr, td{
 					</dt>
 					<dd class="side_tedo">
 						<h2 class="data-title"></h2>
-						<div class="viewport" style="margin-left:17%;">
+						<div class="viewport">
 							<ul>
-								<li data-title="쌀밥"><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li data-title="보리밥"><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
-								<li data-title="잡곡밥"><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
-								<li data-title="현미밥"><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
-								<li data-title="오곡밥"><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
-								<li data-title="콩밥"><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
+								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
+								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락4찬.PNG" /></a></li>
+								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락5찬.PNG" /></a></li>
+								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/sample.jpg" /></a></li>
+								<li><a href="#"><img src="${pageContext.request.contextPath }/img/myOwn/도시락2찬.PNG" /></a></li>
 							</ul>
 						</div>
-						<div class="buttons"></div>
+						<br clear="all">
+						<div class="buttons" style="text-align:center;"></div>
 					</dd>
 
 					<dt class="side_menu">
@@ -205,9 +216,13 @@ table, tr, td{
 		$(function(){
 			var length = $(".viewport li").length;
 			var height = 147;
-			var width = 343;
+			var width = 250;
+			/* var wid = $(".side_tedo").width();
+			console.log(wid);
+			$(".imgs").css({width: wid/4, height: 147}); */
+			$(".viewport img").css({width:width, height:height});
 			
-			$(".viewport").css({width:width, height:height,overflow:"hidden"});
+			$(".viewport").css({width:width*4, height:height, overflow:"hidden"});
 			$(".viewport ul").css({width:width * length});
 			$(".viewport li").css({width:width, height:height, float:"left"});
 			
@@ -218,9 +233,7 @@ table, tr, td{
 			var moveTo = function (index){
 				index = index || 0;
 				index = index % length;
-				$(".viewport>ul").animate({
-					marginLeft: -width * index
-				});
+				$(".viewport>ul").animate({ marginLeft: - width * index * 4 });
 			}
 			
 			/* for(let i=0; i <length; i++){
@@ -228,9 +241,9 @@ table, tr, td{
 					moveTo(i);
 				}).appendTo(".buttons");
 			} */
-			
-			for(let i=0; i <length; i++){(function (i){
-					$("<button></button>").text(i).click(function(){
+			var helf = length/2 + length%2 - 1;
+			for(let i=0; i <helf; i++){(function (i){
+					$("<a class='aBtn'></a>").text(i + 1).click(function(){
 						moveTo(i);
 						
 						var title = $($(".viewport li").get(i)).attr("data-title");
@@ -238,13 +251,15 @@ table, tr, td{
 						$(".data-title").html(title);
 						
 					}).appendTo(".buttons");
+					var nbsp = "&nbsp;&nbsp;";
+					$(".buttons").append(nbsp);
 				})(i);
 			}
-			
 			
 			window.moveSilder = moveTo;
 			
 		});
+
 		
 		
 		
