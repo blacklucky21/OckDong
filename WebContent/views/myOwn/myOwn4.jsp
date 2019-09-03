@@ -154,6 +154,8 @@ table, tr, td{
 		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
 			<div style="text-align:center;">
 				<h2>나만의 도시락</h2>
+				<img src="/OckDong/img/myOwn/도시락4찬크기.PNG">
+				<img src="/OckDong/img/myOwn/도시락4찬예시.PNG">
 			</div>
 			<div style="width: 70%; height: auto; margin-left: 15%; border: 2px solid black; border-radius: 15px;">
 				<div style="width: 100%; height: 20%;">
