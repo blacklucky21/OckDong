@@ -74,10 +74,10 @@ table, tr, td{
 }
 .rice{
 	position: relative;
-    top: 80px;
+    top: 70px;
     left: 40px;
     width: 160px;
-    height: 250px;
+    height: 260px;
 }
 .myOwnSpan{
 	position: relative;
@@ -93,31 +93,24 @@ table, tr, td{
 .aBtn:hover{
 	cursor: pointer;
 }
-.soup{
-	position: relative;
-    top: 30px;
-    left: 290px;
-    width: 160px;
-    height: 160px;
-}
 .main{
 	position: relative;
     width: 220px;
     height: 140px;
-    top: -60px;
+	top: -70px;
     left: 230px;
 }
 .sub1{
 	position: relative;
 	width: 120px;
-    height: 120px;
-    top: -320px;
+    height: 110px;
+    top: -330px;
     left: 330px;
 }
 .sub2{
 	position: relative;
     width: 80px;
-    height: 120px;
+    height: 110px;
     top: -440px;
     left: 233px;
 }
@@ -157,11 +150,12 @@ table, tr, td{
 	<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
 	<jsp:include page="/views/header/header.jsp" />
 
-	<div style="width: 100%; height: 1000px; margin: 5% 0;">
-
+	<div style="width: 100%; height: 1200px; margin: 5% 0;">
 		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
-			<div
-				style="width: 70%; height: auto; margin-left: 15%;">
+			<div style="text-align:center;">
+				<h2>나만의 도시락</h2>
+			</div>
+			<div style="width: 70%; height: auto; margin-left: 15%; border: 2px solid black; border-radius: 15px;">
 				<div style="width: 100%; height: 20%;">
 					<span style="width: 100%; height: 100%;">
 						<img style="margin-right: 28%;" />
@@ -273,7 +267,7 @@ table, tr, td{
 			</div>
 			<div class="bottom">
 				<div class="payment">
-					가격 : 4000원
+					<span>가격 : 4000원</span>
 				</div>
 				<div class="buttons">
 					<input type="button" value="구매하기" style="width:100px; height:50px;"/>

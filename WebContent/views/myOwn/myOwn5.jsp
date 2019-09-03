@@ -157,11 +157,13 @@ table, tr, td{
 	<!-- jsp:include를 사용하면 Context root가 자동으로 포함된다. -->
 	<jsp:include page="/views/header/header.jsp" />
 
-	<div style="width: 100%; height: 1000px; margin: 5% 0;">
+	<div style="width: 100%; height: 1200px; margin: 5% 0;">
 
 		<div style="width: 100%; height: 100%; max-width: 1500px; min-width: 1500px; margin: 0 auto;">
-			<div
-				style="width: 70%; height: auto; margin-left: 15%;">
+			<div style="text-align:center;">
+				<h2>나만의 도시락</h2>
+			</div>
+			<div style="width: 70%; height: auto; margin-left: 15%; border: 2px solid black; border-radius: 15px;"">
 				<div style="width: 100%; height: 20%;">
 					<span style="width: 100%; height: 100%;">
 						<img style="margin-right: 28%;" />
@@ -295,7 +297,7 @@ table, tr, td{
 			</div>
 		<div class="bottom">
 			<div class="payment">
-				가격 : 4000원
+				<span>가격 : 5000원</span>
 			</div>
 			<div class="buttons">
 				<input class="button1" type="button" value="구매하기" style="width:100px; height:50px;"/>
@@ -303,8 +305,9 @@ table, tr, td{
 			</div>
 		</div>
 	</div>
+	<br clear="all">
 </div>
-
+	
 	<jsp:include page="/views/footer/footer.jsp"/>
 
 
